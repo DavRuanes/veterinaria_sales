@@ -1,0 +1,834 @@
+{
+ "clinics": [
+  {
+   "id": 2,
+   "slug": "malaga-teatinos",
+   "name": "Veterinarias Sales Málaga Teatinos",
+   "region": "Andalucía",
+   "city": "Málaga",
+   "address": "C/ Pacífico, 42",
+   "postal_code": "29004",
+   "phone": "910 000 101",
+   "lat": 36.7046,
+   "lng": -4.4473,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias"
+   ],
+   "open_24h": false
+  },
+  {
+   "id": 1,
+   "slug": "sevilla-nervion",
+   "name": "Veterinarias Sales Sevilla Nervión",
+   "region": "Andalucía",
+   "city": "Sevilla",
+   "address": "Av. Luis de Morales, 18",
+   "postal_code": "41018",
+   "phone": "910 000 100",
+   "lat": 37.3833,
+   "lng": -5.9733,
+   "hours_vet": "24 horas, todos los días",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias",
+    "urgencias-24h",
+    "tac"
+   ],
+   "open_24h": true
+  },
+  {
+   "id": 4,
+   "slug": "badalona-centre",
+   "name": "Veterinarias Sales Badalona",
+   "region": "Cataluña",
+   "city": "Badalona",
+   "address": "C/ del Mar, 75",
+   "postal_code": "08911",
+   "phone": "910 000 103",
+   "lat": 41.4469,
+   "lng": 2.2451,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia"
+   ],
+   "open_24h": false
+  },
+  {
+   "id": 3,
+   "slug": "barcelona-sant-andreu",
+   "name": "Veterinarias Sales Barcelona Sant Andreu",
+   "region": "Cataluña",
+   "city": "Barcelona",
+   "address": "C/ Gran de Sant Andreu, 210",
+   "postal_code": "08030",
+   "phone": "910 000 102",
+   "lat": 41.4352,
+   "lng": 2.1897,
+   "hours_vet": "24 horas, todos los días",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias",
+    "urgencias-24h",
+    "endoscopia"
+   ],
+   "open_24h": true
+  },
+  {
+   "id": 10,
+   "slug": "alicante-centro",
+   "name": "Veterinarias Sales Alicante",
+   "region": "Comunidad Valenciana",
+   "city": "Alicante",
+   "address": "Av. de Maisonnave, 33",
+   "postal_code": "03003",
+   "phone": "910 000 109",
+   "lat": 38.342,
+   "lng": -0.495,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia"
+   ],
+   "open_24h": false
+  },
+  {
+   "id": 9,
+   "slug": "valencia-campanar",
+   "name": "Veterinarias Sales Valencia Campanar",
+   "region": "Comunidad Valenciana",
+   "city": "Valencia",
+   "address": "Av. de Pío XII, 52",
+   "postal_code": "46015",
+   "phone": "910 000 108",
+   "lat": 39.481,
+   "lng": -0.392,
+   "hours_vet": "24 horas, todos los días",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias",
+    "urgencias-24h"
+   ],
+   "open_24h": true
+  },
+  {
+   "id": 7,
+   "slug": "alcobendas",
+   "name": "Veterinarias Sales Alcobendas",
+   "region": "Madrid",
+   "city": "Alcobendas",
+   "address": "Av. de España, 21",
+   "postal_code": "28100",
+   "phone": "910 000 106",
+   "lat": 40.537,
+   "lng": -3.637,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia"
+   ],
+   "open_24h": false
+  },
+  {
+   "id": 6,
+   "slug": "madrid-chamberi",
+   "name": "Veterinarias Sales Madrid Chamberí",
+   "region": "Madrid",
+   "city": "Madrid",
+   "address": "C/ de Fuencarral, 140",
+   "postal_code": "28010",
+   "phone": "910 000 105",
+   "lat": 40.431,
+   "lng": -3.702,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias"
+   ],
+   "open_24h": false
+  },
+  {
+   "id": 5,
+   "slug": "madrid-vallecas",
+   "name": "Veterinarias Sales Madrid Vallecas",
+   "region": "Madrid",
+   "city": "Madrid",
+   "address": "Av. de la Albufera, 153",
+   "postal_code": "28038",
+   "phone": "910 000 104",
+   "lat": 40.392,
+   "lng": -3.662,
+   "hours_vet": "24 horas, todos los días",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias",
+    "urgencias-24h",
+    "tac",
+    "endoscopia"
+   ],
+   "open_24h": true
+  },
+  {
+   "id": 8,
+   "slug": "murcia-centro",
+   "name": "Veterinarias Sales Murcia",
+   "region": "Murcia",
+   "city": "Murcia",
+   "address": "Av. Miguel de Cervantes, 40",
+   "postal_code": "30009",
+   "phone": "910 000 107",
+   "lat": 37.996,
+   "lng": -1.135,
+   "hours_vet": "Martes a sábado de 10:00 a 21:00",
+   "hours_shop": "Lunes a sábado de 10:00 a 21:00",
+   "hours_grooming": "Martes a sábado de 10:00 a 20:00",
+   "services": [
+    "consultas",
+    "tienda",
+    "pruebas-laboratoriales",
+    "vacunaciones",
+    "desparasitaciones",
+    "microchip",
+    "peluqueria",
+    "radiologia",
+    "ecografia",
+    "cirugias"
+   ],
+   "open_24h": false
+  }
+ ],
+ "services": [
+  {
+   "id": 1,
+   "slug": "consultas",
+   "title": "Consultas",
+   "summary": "Consultas personalizadas con los mejores profesionales y equipamiento de última tecnología.",
+   "description": "En nuestras clínicas ofrecemos consultas personalizadas con los mejores profesionales especialistas y equipamiento de última tecnología, para dar a tu mascota una asistencia integral de calidad.",
+   "bullets": [
+    "Consultas ilimitadas para socios",
+    "Revisiones completas",
+    "Seguimiento personalizado"
+   ],
+   "icon": "stethoscope",
+   "bookable": true
+  },
+  {
+   "id": 2,
+   "slug": "tienda",
+   "title": "Tienda de alimentación y complementos",
+   "summary": "Alimentación de alta gama, complementos y asesoramiento personalizado.",
+   "description": "Disponemos de tienda con alimentación de alta gama y complementos para que encuentres todo lo que tu mascota necesita, con asesoramiento personalizado según especie, raza, edad y nivel de actividad.",
+   "bullets": [
+    "Alimentación de alta gama",
+    "Complementos y accesorios",
+    "Asesoramiento personalizado"
+   ],
+   "icon": "shopping-bag",
+   "bookable": false
+  },
+  {
+   "id": 3,
+   "slug": "urgencias-24h",
+   "title": "Atención 24h y urgencias",
+   "summary": "Atención veterinaria presencial y telefónica 24 horas, 365 días al año.",
+   "description": "Atención veterinaria presencial y telefónica 24 horas, los 365 días del año, con un equipo quirúrgico disponible para cualquier intervención urgente y atención constante a los pacientes hospitalizados.",
+   "bullets": [
+    "Teléfono de urgencias 24h",
+    "Equipo quirúrgico de guardia",
+    "Hospitalización vigilada"
+   ],
+   "icon": "siren",
+   "bookable": false
+  },
+  {
+   "id": 4,
+   "slug": "pruebas-laboratoriales",
+   "title": "Pruebas laboratoriales",
+   "summary": "Hemograma, bioquímica, microscopía y análisis con inteligencia artificial en tiempo real.",
+   "description": "Contamos con laboratorio propio para obtener resultados en tiempo real y tomar decisiones rápidas sobre el diagnóstico y el tratamiento de tu mascota.",
+   "bullets": [
+    "Hemograma",
+    "Bioquímica",
+    "Microscopio",
+    "Citologías y análisis fecales con IA",
+    "Resultados en tiempo real"
+   ],
+   "icon": "flask-conical",
+   "bookable": true
+  },
+  {
+   "id": 5,
+   "slug": "cirugias",
+   "title": "Cirugías",
+   "summary": "Equipo multidisciplinar de cirujanos y quirófanos totalmente equipados.",
+   "description": "Un grupo multidisciplinar de cirujanos generales realiza desde intervenciones menores hasta cirugías complejas en quirófanos equipados con anestesia inhalatoria, monitorización multiparamétrica y respiración asistida.",
+   "bullets": [
+    "Anestesia inhalatoria",
+    "Monitorización multiparamétrica",
+    "Respiración asistida"
+   ],
+   "icon": "scissors",
+   "bookable": true
+  },
+  {
+   "id": 6,
+   "slug": "endoscopia",
+   "title": "Endoscopia",
+   "summary": "Procedimiento mínimamente invasivo para diagnóstico y extracción de cuerpos extraños.",
+   "description": "La endoscopia permite tomar muestras biológicas y extraer cuerpos extraños, asegurando una recuperación rápida del paciente al ser un procedimiento mínimamente invasivo.",
+   "bullets": [
+    "Toma de muestras",
+    "Extracción de cuerpos extraños",
+    "Recuperación rápida"
+   ],
+   "icon": "scan-search",
+   "bookable": true
+  },
+  {
+   "id": 7,
+   "slug": "ecg",
+   "title": "ECG",
+   "summary": "Evaluación fiable e indolora de la actividad eléctrica del corazón.",
+   "description": "El electrocardiograma es la técnica básica para evaluar la actividad eléctrica del corazón. Es una prueba fiable, indolora y sin riesgos para tu mascota.",
+   "bullets": [
+    "Prueba indolora",
+    "Sin riesgos",
+    "Resultados inmediatos"
+   ],
+   "icon": "heart-pulse",
+   "bookable": true
+  },
+  {
+   "id": 8,
+   "slug": "microchip",
+   "title": "Identificación y microchip",
+   "summary": "Identificación indolora y obligatoria desde los 3 meses de edad.",
+   "description": "Proceso indoloro y obligatorio por ley desde los 3 meses de edad para perros, gatos y hurones. Permite identificar al animal y asociarlo a los datos de contacto de su tutor.",
+   "bullets": [
+    "Perros, gatos y hurones",
+    "Registro oficial",
+    "Pasaporte europeo"
+   ],
+   "icon": "cpu",
+   "bookable": true
+  },
+  {
+   "id": 9,
+   "slug": "radiologia",
+   "title": "Radiología",
+   "summary": "Radiología digital avanzada para diagnósticos certeros y precoces.",
+   "description": "Disponemos de equipos de radiología digital avanzada que nos permiten realizar pruebas diagnósticas basadas en imagen para obtener diagnósticos certeros y precoces.",
+   "bullets": [
+    "Radiología digital",
+    "Imagen de alta definición",
+    "Diagnóstico precoz"
+   ],
+   "icon": "bone",
+   "bookable": true
+  },
+  {
+   "id": 10,
+   "slug": "peluqueria",
+   "title": "Estética y peluquería",
+   "summary": "Corte, baño, cepillado y cuidados en un entorno confortable y sin estrés.",
+   "description": "Nuestro equipo de estética trabaja en un entorno confortable que reduce el estrés durante la sesión. Todos los productos que utilizamos están disponibles en nuestra tienda.",
+   "bullets": [
+    "Corte de pelo y retoques",
+    "Baños y cepillado",
+    "Corte de uñas",
+    "Limpieza de oídos",
+    "Vaciado de glándulas"
+   ],
+   "icon": "sparkles",
+   "bookable": true
+  },
+  {
+   "id": 11,
+   "slug": "vacunaciones",
+   "title": "Vacunaciones",
+   "summary": "Protección frente a enfermedades con un plan vacunal personalizado.",
+   "description": "Las vacunas protegen a tu mascota frente a enfermedades estimulando su sistema inmune. Te asesoramos sobre el plan vacunal más adecuado según su especie, edad y estilo de vida.",
+   "bullets": [
+    "Plan vacunal personalizado",
+    "Recordatorios de vacunación",
+    "Cartilla actualizada"
+   ],
+   "icon": "syringe",
+   "bookable": true
+  },
+  {
+   "id": 12,
+   "slug": "desparasitaciones",
+   "title": "Desparasitaciones",
+   "summary": "Protección interna y externa frente a parásitos.",
+   "description": "La desparasitación interna protege frente a parásitos intestinales (jarabe, gotas o comprimidos) y la externa frente a pulgas, garrapatas y ácaros (pipetas, sprays, comprimidos o collares).",
+   "bullets": [
+    "Desparasitación interna",
+    "Desparasitación externa",
+    "Calendario personalizado"
+   ],
+   "icon": "shield-check",
+   "bookable": true
+  },
+  {
+   "id": 13,
+   "slug": "ecografia",
+   "title": "Ecografía",
+   "summary": "Diagnóstico por imagen en tiempo real, sencillo e inocuo, con Doppler.",
+   "description": "Técnica de diagnóstico por imagen sencilla e inocua que permite ver las estructuras internas en tiempo real sin necesidad de sedación. Nuestros equipos cuentan con Doppler, lo que mejora la calidad diagnóstica.",
+   "bullets": [
+    "Sin sedación",
+    "Imagen en tiempo real",
+    "Tecnología Doppler"
+   ],
+   "icon": "activity",
+   "bookable": true
+  },
+  {
+   "id": 14,
+   "slug": "tac",
+   "title": "TAC",
+   "summary": "Diagnóstico por imagen de alta precisión para casos complejos.",
+   "description": "La tomografía axial computarizada ofrece diagnóstico por imagen de alta precisión, útil para el diagnóstico precoz, la evaluación pronóstica y la planificación de tratamientos. Es una herramienta clave en casos complejos.",
+   "bullets": [
+    "Alta precisión",
+    "Planificación quirúrgica",
+    "Casos complejos"
+   ],
+   "icon": "scan",
+   "bookable": true
+  },
+  {
+   "id": 15,
+   "slug": "certificados",
+   "title": "Certificados",
+   "summary": "Certificados oficiales para viajar dentro y fuera de España.",
+   "description": "Emitimos certificados oficiales para viajar con tu mascota dentro y fuera de España. Nuestros veterinarios están registrados en CEXGAN.",
+   "bullets": [
+    "Certificados de viaje",
+    "Veterinarios registrados en CEXGAN",
+    "Pasaporte europeo"
+   ],
+   "icon": "file-badge",
+   "bookable": true
+  },
+  {
+   "id": 16,
+   "slug": "nutricion",
+   "title": "Asesoramiento nutricional personalizado",
+   "summary": "Dieta adaptada a la edad, tamaño, actividad y estado de salud de tu mascota.",
+   "description": "Diseñamos un plan de alimentación a medida para cada mascota.",
+   "bullets": [
+    "Edad",
+    "Tamaño y raza",
+    "Nivel de actividad",
+    "Temperamento y preferencias",
+    "Estado reproductivo",
+    "Condiciones médicas"
+   ],
+   "icon": "apple",
+   "bookable": true
+  }
+ ],
+ "specialties": [
+  {
+   "id": 1,
+   "slug": "medicina-interna",
+   "title": "Medicina interna",
+   "description": "Diagnóstico y tratamiento no quirúrgico de las enfermedades que afectan a los órganos internos.",
+   "bullets": [
+    "Enfermedades endocrinas",
+    "Digestivo e hígado",
+    "Riñón y vías urinarias"
+   ],
+   "icon": "microscope"
+  },
+  {
+   "id": 2,
+   "slug": "exoticos",
+   "title": "Medicina de exóticos",
+   "description": "Atención a reptiles, aves y pequeños mamíferos: prevención, microchip, nutrición y cirugía.",
+   "bullets": [
+    "Reptiles",
+    "Aves",
+    "Pequeños mamíferos",
+    "Hospitalización"
+   ],
+   "icon": "bird"
+  },
+  {
+   "id": 3,
+   "slug": "dermatologia",
+   "title": "Dermatología",
+   "description": "Tratamiento de los problemas de piel con citologías, cultivos y terapia lumínica de última generación.",
+   "bullets": [
+    "Citologías y cultivos",
+    "Alergias",
+    "Terapia lumínica"
+   ],
+   "icon": "hand"
+  },
+  {
+   "id": 4,
+   "slug": "oftalmologia",
+   "title": "Oftalmología",
+   "description": "Asistencia médico-quirúrgica de las enfermedades oculares.",
+   "bullets": [
+    "Cirugía de párpados",
+    "Córnea",
+    "Enucleación"
+   ],
+   "icon": "eye"
+  },
+  {
+   "id": 5,
+   "slug": "neurologia",
+   "title": "Neurología",
+   "description": "Prevención, diagnóstico y tratamiento de las enfermedades del sistema nervioso.",
+   "bullets": [
+    "Epilepsia",
+    "Hernias discales",
+    "Diagnóstico por imagen"
+   ],
+   "icon": "brain"
+  },
+  {
+   "id": 6,
+   "slug": "etologia",
+   "title": "Etología",
+   "description": "Estudio del comportamiento animal para abordar conductas inusuales o problemáticas.",
+   "bullets": [
+    "Ansiedad por separación",
+    "Agresividad",
+    "Adaptación a nuevos entornos"
+   ],
+   "icon": "paw-print"
+  },
+  {
+   "id": 7,
+   "slug": "cardiologia",
+   "title": "Cardiología",
+   "description": "Atención cardíaca completa con electrocardiogramas, ecocardiografías y cirugía intratorácica.",
+   "bullets": [
+    "Electrocardiograma",
+    "Ecocardiografía",
+    "Cirugía intratorácica"
+   ],
+   "icon": "heart-pulse"
+  },
+  {
+   "id": 8,
+   "slug": "traumatologia",
+   "title": "Traumatología y ortopedia",
+   "description": "Tratamiento de los problemas óseos y musculoesqueléticos con técnicas avanzadas.",
+   "bullets": [
+    "Fracturas",
+    "Displasias",
+    "Ligamentos"
+   ],
+   "icon": "bone"
+  },
+  {
+   "id": 9,
+   "slug": "oncologia",
+   "title": "Oncología",
+   "description": "Diagnóstico precoz y tratamientos oncológicos, incluida la quimioterapia.",
+   "bullets": [
+    "Diagnóstico precoz",
+    "Quimioterapia",
+    "Cuidados paliativos"
+   ],
+   "icon": "ribbon"
+  },
+  {
+   "id": 10,
+   "slug": "odontologia",
+   "title": "Odontología",
+   "description": "Prevención y tratamiento bucodental con limpiezas ultrasónicas y cirugía oral.",
+   "bullets": [
+    "Limpieza ultrasónica",
+    "Extracciones",
+    "Cirugía oral"
+   ],
+   "icon": "toothbrush"
+  },
+  {
+   "id": 11,
+   "slug": "tejidos-blandos",
+   "title": "Cirugía de tejidos blandos",
+   "description": "Procedimientos abdominales, digestivos, reproductivos y hepáticos.",
+   "bullets": [
+    "Cirugía abdominal",
+    "Aparato reproductor",
+    "Cirugía hepática"
+   ],
+   "icon": "scissors"
+  }
+ ],
+ "posts": [
+  {
+   "id": 1,
+   "slug": "proteger-mascota-parasitos-primavera",
+   "title": "Cómo proteger a tu mascota de los parásitos en primavera y verano",
+   "category": "Prevención",
+   "excerpt": "Con el buen tiempo aumentan pulgas, garrapatas y mosquitos. Te contamos cómo mantener a tu perro o gato protegido.",
+   "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2026-04-02",
+   "content": "Con la llegada del calor, los parásitos externos se multiplican. Pulgas, garrapatas, mosquitos y flebótomos pueden transmitir enfermedades graves como la leishmaniosis o la filariosis.\n\n## Desparasitación externa\nUtiliza pipetas, collares o comprimidos según el estilo de vida de tu mascota. Tu veterinario te indicará el producto y la frecuencia más adecuados.\n\n## Desparasitación interna\nLos parásitos intestinales también se contagian con más facilidad en los paseos. Lo habitual es desparasitar cada tres meses, aunque puede variar.\n\n## Revisa a tu mascota tras cada paseo\nPresta atención a orejas, axilas y entre los dedos. Si encuentras una garrapata, no la arranques: acude a tu clínica para retirarla correctamente."
+  },
+  {
+   "id": 2,
+   "slug": "primera-visita-cachorro",
+   "title": "La primera visita al veterinario de tu cachorro: todo lo que debes saber",
+   "category": "Cachorros",
+   "excerpt": "Vacunas, microchip, desparasitación y alimentación: la guía para empezar con buen pie.",
+   "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2026-03-15",
+   "content": "La primera visita es fundamental para comprobar el estado de salud de tu cachorro y establecer su plan preventivo.\n\n## ¿Qué revisaremos?\nExploración general, peso, dentición, piel y oídos.\n\n## Plan vacunal\nDiseñamos un calendario de vacunas adaptado a su edad y estilo de vida.\n\n## Microchip\nEs obligatorio desde los 3 meses y te permitirá recuperarlo si se pierde.\n\n## Alimentación\nTe aconsejamos el pienso más adecuado para su raza y tamaño."
+  },
+  {
+   "id": 3,
+   "slug": "gatos-estres-visita-clinica",
+   "title": "Consejos para reducir el estrés de tu gato en la visita a la clínica",
+   "category": "Gatos",
+   "excerpt": "Transportín, feromonas y rutinas: pequeños gestos que marcan la diferencia.",
+   "image": "https://images.unsplash.com/photo-1574158622682-e40e69881006?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2026-02-20",
+   "content": "Muchos gatos viven la visita al veterinario como una situación estresante. Estos consejos te ayudarán.\n\n## Acostúmbralo al transportín\nDéjalo abierto en casa con una manta y algún premio dentro.\n\n## Usa feromonas\nUn spray de feromonas en el transportín 15 minutos antes del viaje ayuda a tranquilizarlo.\n\n## Clínicas felinas\nNuestras salas para gatos tienen iluminación adaptada y están separadas de los perros."
+  },
+  {
+   "id": 4,
+   "slug": "alimentacion-perros-senior",
+   "title": "Alimentación del perro senior: claves para una vejez saludable",
+   "category": "Nutrición",
+   "excerpt": "A partir de los 7 años sus necesidades cambian. Descubre cómo adaptar su dieta.",
+   "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2026-01-28",
+   "content": "Con la edad, el metabolismo de tu perro se ralentiza y aparecen nuevas necesidades.\n\n## Menos calorías, más calidad\nUn pienso senior controla el peso y aporta proteína de alta calidad.\n\n## Articulaciones\nLos suplementos con glucosamina y condroitina ayudan a mantener su movilidad.\n\n## Revisiones semestrales\nDetectar a tiempo problemas renales o cardíacos es clave en esta etapa."
+  },
+  {
+   "id": 5,
+   "slug": "viajar-con-mascota",
+   "title": "Viajar con tu mascota: documentación y certificados",
+   "category": "Consejos",
+   "excerpt": "Pasaporte europeo, vacuna de la rabia y certificados oficiales para viajar sin sorpresas.",
+   "image": "https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2025-12-10",
+   "content": "Si vas a viajar con tu mascota, prepara la documentación con antelación.\n\n## Dentro de la UE\nNecesitarás microchip, pasaporte europeo y vacuna antirrábica en vigor.\n\n## Fuera de la UE\nCada país tiene sus requisitos. Emitimos certificados oficiales a través de CEXGAN.\n\n## Transporte\nConsulta las condiciones de la compañía aérea o de transporte con tiempo."
+  },
+  {
+   "id": 6,
+   "slug": "salud-dental-mascotas",
+   "title": "Salud dental: la gran olvidada en perros y gatos",
+   "category": "Prevención",
+   "excerpt": "El 80% de los perros mayores de 3 años tiene algún problema bucodental. Te explicamos cómo prevenirlo.",
+   "image": "https://images.unsplash.com/photo-1517849845537-4d257902454a?w=1200&q=80&auto=format&fit=crop",
+   "published_at": "2025-11-05",
+   "content": "El sarro y la enfermedad periodontal pueden afectar a corazón, riñones e hígado.\n\n## Cepillado\nLo ideal es cepillar los dientes de tu mascota a diario con pasta específica.\n\n## Snacks dentales\nAyudan, pero no sustituyen al cepillado.\n\n## Limpieza profesional\nUna limpieza ultrasónica periódica mantiene su boca sana."
+  }
+ ],
+ "testimonials": [
+  {
+   "id": 1,
+   "author": "Katherine M.",
+   "pet": "Luna, golden retriever",
+   "text": "Excelente atención. Me explicaron todo con mucha paciencia y Luna salió feliz de la consulta.",
+   "rating": 5,
+   "published_at": "2025-12-12"
+  },
+  {
+   "id": 2,
+   "author": "Andrea R.",
+   "pet": "Simba, gato europeo",
+   "text": "Muy buena experiencia. Fui hace una semana con mi gatete y todo genial, el trato fue muy cercano.",
+   "rating": 5,
+   "published_at": "2025-12-03"
+  },
+  {
+   "id": 3,
+   "author": "Javier P.",
+   "pet": "Toby, beagle",
+   "text": "Lo mejor es no tener que preocuparte por las facturas. Pagas la cuota y vas siempre que lo necesitas.",
+   "rating": 5,
+   "published_at": "2025-11-20"
+  },
+  {
+   "id": 4,
+   "author": "Lucía G.",
+   "pet": "Nala, ragdoll",
+   "text": "Tuvimos una urgencia un domingo por la noche y nos atendieron enseguida. Eternamente agradecidos.",
+   "rating": 5,
+   "published_at": "2025-11-02"
+  },
+  {
+   "id": 5,
+   "author": "Marcos T.",
+   "pet": "Rocky y Kira",
+   "text": "Tengo dos perros y la cuota es la misma. Las instalaciones están impecables y el equipo es encantador.",
+   "rating": 5,
+   "published_at": "2025-10-18"
+  },
+  {
+   "id": 6,
+   "author": "Elena S.",
+   "pet": "Coco, conejo",
+   "text": "Por fin una clínica que sabe de exóticos. Coco está estupendo gracias al equipo.",
+   "rating": 5,
+   "published_at": "2025-09-30"
+  }
+ ],
+ "faqs": [
+  {
+   "id": 1,
+   "category": "Socios",
+   "question": "¿Hay periodo de carencia o copagos?",
+   "answer": "No. Desde el primer día puedes utilizar todos los servicios incluidos sin carencias, sin copagos y sin límites de uso.",
+   "featured": true
+  },
+  {
+   "id": 2,
+   "category": "Socios",
+   "question": "¿El precio depende de la edad, raza o tamaño de mi mascota?",
+   "answer": "No. La cuota es la misma para cualquier mascota, independientemente de su especie, raza, edad o tamaño.",
+   "featured": true
+  },
+  {
+   "id": 3,
+   "category": "Socios",
+   "question": "¿Cuánto cuesta ser socio?",
+   "answer": "La cuota es de 22,90 € al mes, o 274,80 € al año con un mes gratis si eliges el pago anual.",
+   "featured": true
+  },
+  {
+   "id": 4,
+   "category": "Socios",
+   "question": "¿Puedo dar de baja mi suscripción cuando quiera?",
+   "answer": "Sí. No hay permanencia: puedes darte de baja en cualquier momento desde tu área de socio o llamando a atención al cliente.",
+   "featured": false
+  },
+  {
+   "id": 5,
+   "category": "Citas",
+   "question": "¿Cómo pido cita?",
+   "answer": "Puedes pedir cita online desde esta web eligiendo tu clínica, el servicio y el horario que mejor te venga, o llamando por teléfono.",
+   "featured": false
+  },
+  {
+   "id": 6,
+   "category": "Citas",
+   "question": "¿Puedo ir sin cita?",
+   "answer": "Sí, aunque te recomendamos reservar para evitar esperas. Las urgencias se atienden siempre sin cita.",
+   "featured": false
+  },
+  {
+   "id": 7,
+   "category": "Servicios",
+   "question": "¿Qué servicios están incluidos en la cuota?",
+   "answer": "Consultas ilimitadas, vacunas, desparasitaciones, microchip, revisiones, curas y suturas, entre otros. Consulta la página de servicios para ver el detalle.",
+   "featured": false
+  },
+  {
+   "id": 8,
+   "category": "Servicios",
+   "question": "¿Atendéis animales exóticos?",
+   "answer": "Sí, contamos con veterinarios especializados en reptiles, aves y pequeños mamíferos.",
+   "featured": false
+  },
+  {
+   "id": 9,
+   "category": "Servicios",
+   "question": "¿Qué hago si tengo una urgencia fuera de horario?",
+   "answer": "Llama a nuestro teléfono de urgencias 24h. Te atenderemos y, si es necesario, te derivaremos a la clínica 24h más cercana.",
+   "featured": false
+  }
+ ]
+}

@@ -1,0 +1,109 @@
+@import "tailwindcss";
+
+/* Paleta sacada del logo: azul petróleo del texto, aguamarina del fondo y gris pizarra del gato. */
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fredoka", "Nunito", ui-sans-serif, sans-serif;
+  --font-script: "Pacifico", cursive;
+
+  --color-ink-950: #10181e;
+  --color-ink-900: #18232b;
+  --color-ink-800: #22313b;
+  --color-ink-700: #303f49;
+  --color-ink-600: #475761;
+  --color-ink-500: #66757e;
+  --color-ink-300: #b5c0c6;
+  --color-ink-200: #d7dee2;
+  --color-ink-100: #edf1f3;
+  --color-ink-50: #f6f8f9;
+
+  --color-brand-950: #0b2a39;
+  --color-brand-900: #113c51;
+  --color-brand-800: #164f6a;
+  --color-brand-700: #1b6283;
+  --color-brand-600: #22769b;
+  --color-brand-500: #3790b3;
+  --color-brand-400: #5faac8;
+  --color-brand-300: #93c7db;
+  --color-brand-200: #c3e2ec;
+  --color-brand-100: #e2f2f6;
+  --color-brand-50: #f1f9fb;
+
+  --color-aqua-300: #8fd3d6;
+  --color-aqua-200: #c6e9ea;
+  --color-aqua-100: #e3f5f5;
+  --color-heart: #45b0b9;
+
+  --shadow-card: 0 1px 2px rgb(16 24 30 / 0.04), 0 8px 24px -8px rgb(17 60 81 / 0.18);
+  --shadow-lift: 0 2px 4px rgb(16 24 30 / 0.05), 0 20px 40px -12px rgb(17 60 81 / 0.28);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white font-sans text-ink-700 antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink-900;
+    text-wrap: balance;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-500;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .input {
+    @apply w-full rounded-xl border border-ink-200 bg-white px-4 py-3 text-ink-900 placeholder:text-ink-500/70 transition focus:border-brand-500 focus:ring-4 focus:ring-brand-100 focus:outline-none;
+  }
+  .label {
+    @apply mb-1.5 block text-sm font-bold text-ink-800;
+  }
+  .prose-vet h2 {
+    @apply mt-8 mb-3 text-2xl;
+  }
+  .prose-vet p {
+    @apply mb-4 leading-relaxed text-ink-700;
+  }
+}
+
+/* Patrón de huellas para fondos de sección */
+.bg-paws {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cg fill='%23ffffff' fill-opacity='0.06'%3E%3Cellipse cx='30' cy='38' rx='9' ry='7'/%3E%3Ccircle cx='18' cy='26' r='4'/%3E%3Ccircle cx='26' cy='20' r='4'/%3E%3Ccircle cx='35' cy='20' r='4'/%3E%3Ccircle cx='43' cy='26' r='4'/%3E%3Cellipse cx='90' cy='98' rx='9' ry='7'/%3E%3Ccircle cx='78' cy='86' r='4'/%3E%3Ccircle cx='86' cy='80' r='4'/%3E%3Ccircle cx='95' cy='80' r='4'/%3E%3Ccircle cx='103' cy='86' r='4'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.leaflet-container {
+  font-family: var(--font-sans);
+  z-index: 0;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-fade-up {
+    animation: none;
+  }
+}
