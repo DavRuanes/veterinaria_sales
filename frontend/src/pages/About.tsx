@@ -1,7 +1,7 @@
 import { Building, CircleCheck, HandHeart, Infinity as InfinityIcon, PiggyBank } from "lucide-react";
 import { photo, PHOTOS, SITE } from "../lib/site";
 import { ButtonLink, Eyebrow, PageHero, SectionHeading } from "../components/ui";
-import { AppPromo, IncludedList } from "../components/sections";
+import { IncludedList } from "../components/sections";
 
 const INCLUDED = [
   "Consultas ilimitadas",
@@ -125,8 +125,6 @@ export default function About() {
           </div>
         </div>
       </section>
-
-      <AppPromo />
     </>
   );
 }

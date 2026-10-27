@@ -309,7 +309,7 @@ FAQS = [
     ("Socios", "¿Cuánto cuesta ser socio?",
      "La cuota es de 29,99 € al mes, o 319,99 € al año con un mes gratis si eliges el pago anual.", True),
     ("Socios", "¿Puedo dar de baja mi suscripción cuando quiera?",
-     "Sí. No hay permanencia: puedes darte de baja en cualquier momento desde tu área de socio o llamando a atención al cliente.", False),
+     "Sí. No hay permanencia: puedes darte de baja en cualquier momento llamando a atención al cliente o escribiéndonos.", False),
     ("Citas", "¿Cómo pido cita?",
      "Puedes pedir cita online desde esta web eligiendo tu clínica, el servicio y el horario que mejor te venga, o llamando por teléfono.", False),
     ("Citas", "¿Puedo ir sin cita?",

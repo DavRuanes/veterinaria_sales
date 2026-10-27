@@ -5,7 +5,7 @@ import { usePosts, useServices } from "../lib/api";
 import { LOGO, photo, PHOTOS, SITE } from "../lib/site";
 import { Icon } from "../components/Icon";
 import { ButtonLink, ErrorBox, Eyebrow, Loading, SectionHeading, Wave } from "../components/ui";
-import { AppPromo, BlogCard, FeaturedFaqs, Newsletter, Stats, Testimonials } from "../components/sections";
+import { BlogCard, FeaturedFaqs, Newsletter, Stats, Testimonials } from "../components/sections";
 
 const SLIDES = [
   {
@@ -300,7 +300,6 @@ export default function Home() {
       <WhyUs />
       <ClinicFinder />
       <Testimonials />
-      <AppPromo />
       <LatestPosts />
       <FeaturedFaqs />
       <Newsletter />

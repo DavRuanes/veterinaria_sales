@@ -3,20 +3,15 @@ import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import {
   ArrowRight,
-  CalendarCheck,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
   CircleCheck,
-  Clock,
-  MessageCircle,
   Quote,
-  Smartphone,
   Star,
 } from "lucide-react";
 import { post, useFaqs, useTestimonials, type BlogPostSummary, type Faq } from "../lib/api";
-import { formatDate, photo, PHOTOS, SITE } from "../lib/site";
-import { AppleStoreIcon, GooglePlayIcon } from "./Icon";
+import { formatDate, SITE } from "../lib/site";
 import { Button, ButtonLink, ErrorBox, Eyebrow, Loading } from "./ui";
 
 /* ---------- Banda "Hazte socio" ---------- */
@@ -223,80 +218,6 @@ export function FeaturedFaqs() {
           {isLoading && <Loading />}
           {error && <ErrorBox error={error} />}
           {data && <FaqAccordion faqs={data} />}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------- App ---------- */
-
-export function AppPromo() {
-  const features = [
-    { Icon: MessageCircle, text: "Consultas veterinarias online en tiempo real" },
-    { Icon: CalendarCheck, text: "Reserva tus citas en segundos" },
-    { Icon: Clock, text: "Servicio 7 días a la semana" },
-  ];
-  return (
-    <section className="overflow-hidden py-20">
-      <div className="container-page grid items-center gap-12 lg:grid-cols-2">
-        <div className="relative order-2 lg:order-1">
-          <div className="absolute -top-8 -left-8 size-64 rounded-full bg-aqua-100" aria-hidden />
-          <div className="relative mx-auto w-64 rounded-[2.5rem] border-[10px] border-ink-900 bg-ink-900 shadow-lift">
-            <div className="overflow-hidden rounded-[1.8rem] bg-white">
-              <div className="bg-brand-700 p-5 text-white">
-                <p className="text-xs opacity-80">Hola, Laura 👋</p>
-                <p className="font-display text-lg font-semibold">Tus mascotas</p>
-              </div>
-              <img src={photo(PHOTOS.catPortrait, 500)} alt="" className="h-40 w-full object-cover" />
-              <div className="space-y-2 p-4">
-                <div className="rounded-xl bg-brand-50 p-3 text-xs">
-                  <p className="font-bold text-ink-900">Próxima cita</p>
-                  <p className="text-ink-600">Vacunación · Jueves 10:30</p>
-                </div>
-                <div className="rounded-xl bg-ink-50 p-3 text-xs">
-                  <p className="font-bold text-ink-900">Desparasitación</p>
-                  <p className="text-ink-600">Recordatorio en 12 días</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="order-1 lg:order-2">
-          <Eyebrow>App para socios</Eyebrow>
-          <h2 className="text-3xl font-bold sm:text-4xl">Tu clínica, siempre en el bolsillo</h2>
-          <p className="mt-4 text-lg text-ink-600">
-            Gestiona la salud de tus mascotas desde el móvil: citas, historial, recordatorios y chat con tu veterinario.
-          </p>
-          <ul className="mt-8 space-y-4">
-            {features.map(({ Icon, text }) => (
-              <li key={text} className="flex items-center gap-4">
-                <span className="flex size-11 items-center justify-center rounded-2xl bg-brand-100 text-brand-700">
-                  <Icon className="size-5" aria-hidden />
-                </span>
-                <span className="font-semibold text-ink-800">{text}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="mt-8 flex flex-wrap gap-3">
-            <a href={SITE.appStore} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl bg-ink-900 px-5 py-3 text-white hover:bg-ink-800">
-              <AppleStoreIcon className="size-7" />
-              <span className="text-xs leading-tight">
-                Descárgala en <br />
-                <strong className="text-base">App Store</strong>
-              </span>
-            </a>
-            <a href={SITE.googlePlay} target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-2xl bg-ink-900 px-5 py-3 text-white hover:bg-ink-800">
-              <GooglePlayIcon className="size-6" />
-              <span className="text-xs leading-tight">
-                Disponible en <br />
-                <strong className="text-base">Google Play</strong>
-              </span>
-            </a>
-          </div>
-          <p className="mt-4 flex items-center gap-2 text-sm text-ink-500">
-            <Smartphone className="size-4" aria-hidden /> Disponible para iOS y Android
-          </p>
         </div>
       </div>
     </section>

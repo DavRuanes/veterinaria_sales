@@ -13,8 +13,6 @@ export const SITE = {
     tiktok: "https://tiktok.com/",
     linkedin: "https://linkedin.com/",
   },
-  appStore: "https://apps.apple.com/",
-  googlePlay: "https://play.google.com/",
 };
 
 export const REGIONS = ["Andalucía", "Cataluña", "Madrid", "Murcia", "Comunidad Valenciana"];

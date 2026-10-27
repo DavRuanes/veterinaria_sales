@@ -103,19 +103,3 @@ export function WhatsappIcon({ className }: SvgProps) {
     </svg>
   );
 }
-
-export function AppleStoreIcon({ className }: SvgProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9a4.8 4.8 0 0 0-3.8-2c-1.6-.2-3.1.9-3.9.9s-2-.9-3.4-.9a5 5 0 0 0-4.2 2.6c-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.4-.8 2 .8 3.4.8 2.3-1.3 3.1-2.5a10.6 10.6 0 0 0 1.4-2.9 4.5 4.5 0 0 1-2.7-4.1zM13.9 5a4.5 4.5 0 0 0 1-3.3 4.7 4.7 0 0 0-3 1.6 4.3 4.3 0 0 0-1.1 3.1A3.9 3.9 0 0 0 13.9 5z" />
-    </svg>
-  );
-}
-
-export function GooglePlayIcon({ className }: SvgProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M3.6 2.3c-.3.3-.4.7-.4 1.2v17c0 .5.1.9.4 1.2l9.4-9.7zM14.3 13.3l2.6 2.7-11.4 6.4 8.8-9.1zM18.3 15.2 15.4 12l2.9-3 3.3 1.9c.9.5.9 1.8 0 2.4zM5.5 1.6l11.4 6.4-2.6 2.7z" />
-    </svg>
-  );
-}

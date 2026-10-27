@@ -4,9 +4,7 @@ import { CalendarCheck, ChevronDown, Menu, Phone, Siren, X } from "lucide-react"
 import { LOGO, REGIONS, SITE } from "../lib/site";
 import { ButtonLink } from "./ui";
 import {
-  AppleStoreIcon,
   FacebookIcon,
-  GooglePlayIcon,
   InstagramIcon,
   LinkedinIcon,
   TiktokIcon,
@@ -335,27 +333,8 @@ function Footer() {
         ))}
 
         <div>
-          <h3 className="mb-4 font-display text-lg font-semibold text-white">¿Ya eres socio?</h3>
-          <p className="mb-4 text-sm">Descarga nuestra app y gestiona tus citas desde el móvil.</p>
-          <div className="flex flex-wrap gap-2">
-            <a href={SITE.appStore} target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-xl border border-ink-700 px-3 py-2 text-white hover:border-brand-400">
-              <AppleStoreIcon className="size-6" />
-              <span className="text-left text-[10px] leading-tight">
-                Descárgala en
-                <br />
-                <strong className="text-sm">App Store</strong>
-              </span>
-            </a>
-            <a href={SITE.googlePlay} target="_blank" rel="noreferrer" className="flex items-center gap-2 rounded-xl border border-ink-700 px-3 py-2 text-white hover:border-brand-400">
-              <GooglePlayIcon className="size-5" />
-              <span className="text-left text-[10px] leading-tight">
-                Disponible en
-                <br />
-                <strong className="text-sm">Google Play</strong>
-              </span>
-            </a>
-          </div>
-          <div className="mt-6 space-y-3 text-sm">
+          <h3 className="mb-4 font-display text-lg font-semibold text-white">¿Necesitas ayuda?</h3>
+          <div className="space-y-3 text-sm">
             <p>
               <span className="block text-xs tracking-wider text-ink-500 uppercase">Atención al cliente</span>
               <a href={`tel:${SITE.phone.replace(/\s/g, "")}`} className="font-display text-xl font-semibold text-white hover:text-aqua-300">
