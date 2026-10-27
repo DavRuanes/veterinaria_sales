@@ -183,31 +183,34 @@ function Header() {
     setOpen(false);
   }, [location.pathname, location.search]);
 
+  // El menú va fuera del <header>: su backdrop-blur haría que el `fixed` del menú quedara encerrado en la cabecera.
   return (
-    <header className="sticky top-0 z-40 border-b border-ink-100 bg-white/95 backdrop-blur">
-      <div className="container-page flex h-20 items-center justify-between gap-4">
-        <Logo />
-        <DesktopNav />
-        <div className="flex items-center gap-2">
-          <div className="hidden items-center gap-2 sm:flex">
-            <ButtonLink to="/pide-cita" variant="outline" size="sm">
-              Pide cita
-            </ButtonLink>
-            <ButtonLink to="/hazte-socio" size="sm">
-              Hazte socio
-            </ButtonLink>
+    <>
+      <header className="sticky top-0 z-40 border-b border-ink-100 bg-white/95 backdrop-blur">
+        <div className="container-page flex h-20 items-center justify-between gap-4">
+          <Logo />
+          <DesktopNav />
+          <div className="flex items-center gap-2">
+            <div className="hidden items-center gap-2 sm:flex">
+              <ButtonLink to="/pide-cita" variant="outline" size="sm">
+                Pide cita
+              </ButtonLink>
+              <ButtonLink to="/hazte-socio" size="sm">
+                Hazte socio
+              </ButtonLink>
+            </div>
+            <button
+              className="rounded-full p-2 text-ink-800 hover:bg-ink-100 xl:hidden"
+              onClick={() => setOpen(true)}
+              aria-label="Abrir menú"
+            >
+              <Menu className="size-7" />
+            </button>
           </div>
-          <button
-            className="rounded-full p-2 text-ink-800 hover:bg-ink-100 xl:hidden"
-            onClick={() => setOpen(true)}
-            aria-label="Abrir menú"
-          >
-            <Menu className="size-7" />
-          </button>
         </div>
-      </div>
+      </header>
       {open && <MobileNav onClose={() => setOpen(false)} />}
-    </header>
+    </>
   );
 }
 
