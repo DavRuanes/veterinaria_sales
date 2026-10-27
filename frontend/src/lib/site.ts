@@ -22,22 +22,19 @@ export const SPECIES_LABEL: Record<string, string> = {
   exotico: "Exótico",
 };
 
-export function photo(id: string, w = 1200) {
-  return `https://images.unsplash.com/${id}?w=${w}&q=80&auto=format&fit=crop`;
+/** Fotos propias en frontend/public/fotos, respetando la base de despliegue. */
+export function photo(file: string) {
+  return `${import.meta.env.BASE_URL}fotos/${file}`;
 }
 
 export const PHOTOS = {
-  dogsRunning: "photo-1548199973-03cce0bbc87b",
-  vetCat: "photo-1628009368231-7bb7cfcb0def",
-  puppy: "photo-1576201836106-db1758fd1c97",
-  frenchie: "photo-1583337130417-3346a1be7dee",
-  beagle: "photo-1543466835-00a7907e9de1",
-  kittenPaw: "photo-1592194996308-7b43878e84a6",
-  catDog: "photo-1450778869180-41d0601e046e",
-  dogBeach: "photo-1530281700549-e82e7bf110d6",
-  catPortrait: "photo-1514888286974-6c03e2ca1dba",
-  samoyed: "photo-1596492784531-6e6eb5ea9993",
-  rabbit: "photo-1452857297128-d9c29adba80b",
+  puppy: "cachorro.jpg",
+  dogPlush: "perra-peluche.jpg",
+  dogGrooming: "perro-peluqueria.jpg",
+  macaw: "guacamayo.jpg",
+  cat: "gata.jpg",
+  parakeet: "cotorra.jpg",
+  whiteDog: "perro-blanco.jpg",
 };
 
 export function formatDate(iso: string) {

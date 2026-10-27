@@ -18,7 +18,7 @@ export function BlogList() {
         eyebrow="Blog"
         title="Consejos y noticias"
         intro="Artículos de nuestros veterinarios para cuidar mejor de tu mascota en cada etapa de su vida."
-        image={photo(PHOTOS.dogBeach, 1800)}
+        image={photo(PHOTOS.macaw)}
       />
       <section className="container-page py-14">
         <div className="mb-10 flex flex-wrap gap-2" role="group" aria-label="Filtrar por categoría">
@@ -84,7 +84,7 @@ export function BlogPostPage() {
     <>
       <article>
         <header className="relative bg-ink-900">
-          <img src={data.image} alt="" className="absolute inset-0 size-full object-cover opacity-35" />
+          <img src={photo(data.image)} alt="" className="absolute inset-0 size-full object-cover opacity-35" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-950 to-ink-950/30" />
           <div className="container-page relative max-w-3xl py-20 sm:py-28">
             <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-aqua-300 hover:text-white">

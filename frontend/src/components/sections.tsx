@@ -11,7 +11,7 @@ import {
   Star,
 } from "lucide-react";
 import { post, useFaqs, useTestimonials, type BlogPostSummary, type Faq } from "../lib/api";
-import { formatDate, SITE } from "../lib/site";
+import { formatDate, photo, SITE } from "../lib/site";
 import { Button, ButtonLink, ErrorBox, Eyebrow, Loading } from "./ui";
 
 /* ---------- Banda "Hazte socio" ---------- */
@@ -162,7 +162,7 @@ export function BlogCard({ post: p }: { post: BlogPostSummary }) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1 hover:shadow-lift">
       <Link to={`/blog/${p.slug}`} className="block aspect-[16/10] overflow-hidden" tabIndex={-1} aria-hidden>
-        <img src={p.image.replace("w=1200", "w=700")} alt="" loading="lazy" className="size-full object-cover transition duration-500 group-hover:scale-105" />
+        <img src={photo(p.image)} alt="" loading="lazy" className="size-full object-cover transition duration-500 group-hover:scale-105" />
       </Link>
       <div className="flex flex-1 flex-col p-6">
         <p className="text-xs font-extrabold tracking-wider text-brand-600 uppercase">

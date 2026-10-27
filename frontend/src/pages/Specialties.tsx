@@ -13,7 +13,7 @@ export default function Specialties() {
         eyebrow="Especialidades"
         title="Un equipo experto para cada necesidad"
         intro="Nuestro equipo de veterinarios especializados trabaja en nuestra clínica para ofrecer a tu mascota el mejor diagnóstico y tratamiento."
-        image={photo(PHOTOS.vetCat, 1800)}
+        image={photo(PHOTOS.macaw)}
       >
         <ButtonLink to="/pide-cita" size="lg">
           Pide cita

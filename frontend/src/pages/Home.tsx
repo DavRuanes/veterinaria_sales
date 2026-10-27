@@ -9,7 +9,7 @@ import { BlogCard, FeaturedFaqs, Newsletter, Testimonials } from "../components/
 
 const SLIDES = [
   {
-    image: PHOTOS.dogsRunning,
+    image: PHOTOS.puppy,
     eyebrow: "La seguridad social de tu mascota",
     title: (
       <>
@@ -19,7 +19,7 @@ const SLIDES = [
     text: `Consultas ilimitadas, vacunas, desparasitaciones y mucho más por solo ${SITE.priceMonthly} € al mes.`,
   },
   {
-    image: PHOTOS.vetCat,
+    image: PHOTOS.dogGrooming,
     eyebrow: "Especialistas",
     title: (
       <>
@@ -29,7 +29,7 @@ const SLIDES = [
     text: "Especialistas en cardiología, dermatología, traumatología, exóticos y mucho más.",
   },
   {
-    image: PHOTOS.catDog,
+    image: PHOTOS.dogPlush,
     eyebrow: "Urgencias 24h",
     title: (
       <>
@@ -53,7 +53,7 @@ function HeroSlider() {
       {SLIDES.map((s, i) => (
         <img
           key={s.image}
-          src={photo(s.image, 1800)}
+          src={photo(s.image)}
           alt=""
           className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ${i === index ? "opacity-45" : "opacity-0"}`}
         />
@@ -192,7 +192,7 @@ function WhyUs() {
     <section className="bg-ink-50 py-20">
       <div className="container-page grid items-center gap-14 lg:grid-cols-2">
         <div className="relative">
-          <img src={photo(PHOTOS.vetCat, 1000)} alt="Veterinaria atendiendo a un gato en consulta" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-lift sm:aspect-[4/3] lg:aspect-[4/5]" />
+          <img src={photo(PHOTOS.cat)} alt="Gata de pelo largo blanca y gris" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-lift sm:aspect-[4/3] lg:aspect-[4/5]" />
         </div>
         <div>
           <Eyebrow>Por qué elegirnos</Eyebrow>

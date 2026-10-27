@@ -6,7 +6,7 @@ Web para una clínica veterinaria que funciona con una cuota mensual de socio: p
 
 La idea surgió de analizar cómo funcionan las cadenas de clínicas veterinarias por suscripción que ya existen en España. Quería reproducir ese tipo de web de principio a fin: no solo la parte visual, sino también lo que hay detrás (reservar una cita en un hueco libre de verdad, dar de alta a un socio, buscar la clínica más cercana) con un backend y una base de datos reales.
 
-> Los nombres de las clínicas, direcciones, teléfonos y opiniones son inventados. Las fotos son de Unsplash y los mapas de OpenStreetMap.
+> Los nombres de las clínicas, direcciones, teléfonos y opiniones son inventados. Las fotos son propias (están en `frontend/public/fotos`) y los mapas de OpenStreetMap.
 
 ---
 

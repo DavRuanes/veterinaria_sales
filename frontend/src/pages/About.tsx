@@ -35,7 +35,7 @@ export default function About() {
         eyebrow="¿Qué es Veterinarias Sales?"
         title="Sin carencias. Sin copagos. Sin límites."
         intro="Somos la seguridad social de tu mascota: un modelo de clínicas veterinarias que hace accesible el mejor cuidado a todas las familias."
-        image={photo(PHOTOS.beagle, 1800)}
+        image={photo(PHOTOS.whiteDog)}
       >
         <ButtonLink to="/hazte-socio" size="lg">
           Hazte socio ahora
@@ -56,7 +56,7 @@ export default function About() {
             recordatorios de vacunación y mucho más en nuestra clínica.
           </p>
         </div>
-        <img src={photo(PHOTOS.catDog, 1000)} alt="Un perro y un gato descansando juntos" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
+        <img src={photo(PHOTOS.dogPlush)} alt="Perra tumbada con su peluche" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
       </section>
 
       <section className="bg-ink-900 py-20">

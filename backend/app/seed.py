@@ -8,10 +8,6 @@ from sqlalchemy.orm import Session
 from . import models
 
 
-def img(photo_id: str, w: int = 1200) -> str:
-    return f"https://images.unsplash.com/{photo_id}?w={w}&q=80&auto=format&fit=crop"
-
-
 SERVICES = [
     {
         "slug": "consultas",
@@ -208,7 +204,7 @@ POSTS = [
         "slug": "proteger-mascota-parasitos-primavera",
         "title": "Cómo proteger a tu mascota de los parásitos en primavera y verano",
         "category": "Prevención",
-        "image": img("photo-1548199973-03cce0bbc87b"),
+        "image": "perra-peluche.jpg",
         "excerpt": "Con el buen tiempo aumentan pulgas, garrapatas y mosquitos. Te contamos cómo mantener a tu perro o gato protegido.",
         "content": "Con la llegada del calor, los parásitos externos se multiplican. Pulgas, garrapatas, mosquitos y flebótomos "
         "pueden transmitir enfermedades graves como la leishmaniosis o la filariosis.\n\n"
@@ -224,7 +220,7 @@ POSTS = [
         "slug": "primera-visita-cachorro",
         "title": "La primera visita al veterinario de tu cachorro: todo lo que debes saber",
         "category": "Cachorros",
-        "image": img("photo-1583337130417-3346a1be7dee"),
+        "image": "cachorro.jpg",
         "excerpt": "Vacunas, microchip, desparasitación y alimentación: la guía para empezar con buen pie.",
         "content": "La primera visita es fundamental para comprobar el estado de salud de tu cachorro y establecer su plan preventivo.\n\n"
         "## ¿Qué revisaremos?\nExploración general, peso, dentición, piel y oídos.\n\n"
@@ -237,7 +233,7 @@ POSTS = [
         "slug": "gatos-estres-visita-clinica",
         "title": "Consejos para reducir el estrés de tu gato en la visita a la clínica",
         "category": "Gatos",
-        "image": img("photo-1574158622682-e40e69881006"),
+        "image": "gata.jpg",
         "excerpt": "Transportín, feromonas y rutinas: pequeños gestos que marcan la diferencia.",
         "content": "Muchos gatos viven la visita al veterinario como una situación estresante. Estos consejos te ayudarán.\n\n"
         "## Acostúmbralo al transportín\nDéjalo abierto en casa con una manta y algún premio dentro.\n\n"
@@ -249,7 +245,7 @@ POSTS = [
         "slug": "alimentacion-perros-senior",
         "title": "Alimentación del perro senior: claves para una vejez saludable",
         "category": "Nutrición",
-        "image": img("photo-1587300003388-59208cc962cb"),
+        "image": "perro-blanco.jpg",
         "excerpt": "A partir de los 7 años sus necesidades cambian. Descubre cómo adaptar su dieta.",
         "content": "Con la edad, el metabolismo de tu perro se ralentiza y aparecen nuevas necesidades.\n\n"
         "## Menos calorías, más calidad\nUn pienso senior controla el peso y aporta proteína de alta calidad.\n\n"
@@ -261,7 +257,7 @@ POSTS = [
         "slug": "viajar-con-mascota",
         "title": "Viajar con tu mascota: documentación y certificados",
         "category": "Consejos",
-        "image": img("photo-1530281700549-e82e7bf110d6"),
+        "image": "guacamayo.jpg",
         "excerpt": "Pasaporte europeo, vacuna de la rabia y certificados oficiales para viajar sin sorpresas.",
         "content": "Si vas a viajar con tu mascota, prepara la documentación con antelación.\n\n"
         "## Dentro de la UE\nNecesitarás microchip, pasaporte europeo y vacuna antirrábica en vigor.\n\n"
@@ -273,7 +269,7 @@ POSTS = [
         "slug": "salud-dental-mascotas",
         "title": "Salud dental: la gran olvidada en perros y gatos",
         "category": "Prevención",
-        "image": img("photo-1517849845537-4d257902454a"),
+        "image": "perro-peluqueria.jpg",
         "excerpt": "El 80% de los perros mayores de 3 años tiene algún problema bucodental. Te explicamos cómo prevenirlo.",
         "content": "El sarro y la enfermedad periodontal pueden afectar a corazón, riñones e hígado.\n\n"
         "## Cepillado\nLo ideal es cepillar los dientes de tu mascota a diario con pasta específica.\n\n"

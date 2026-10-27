@@ -23,7 +23,7 @@ export default function Services() {
         eyebrow="Tus servicios incluidos"
         title="Servicios de la clínica"
         intro={`Todo lo que tu mascota necesita, en un solo lugar y por solo una cuota de ${SITE.priceMonthly} € al mes.`}
-        image={photo(PHOTOS.puppy, 1800)}
+        image={photo(PHOTOS.whiteDog)}
       >
         <ButtonLink to="/hazte-socio" size="lg">
           Hazte socio hoy mismo

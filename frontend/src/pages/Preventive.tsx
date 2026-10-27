@@ -16,19 +16,19 @@ const PROGRAMS = [
   {
     Icon: Dog,
     title: "Medicina canina",
-    image: PHOTOS.beagle,
+    image: PHOTOS.dogGrooming,
     text: "Planes preventivos adaptados a la raza, el tamaño y el estilo de vida de tu perro, desde cachorro hasta senior.",
   },
   {
     Icon: Cat,
     title: "Medicina felina",
-    image: PHOTOS.kittenPaw,
+    image: PHOTOS.cat,
     text: "Instalaciones adaptadas a los gatos, con iluminación suave y espacios separados para reducir su estrés.",
   },
   {
     Icon: Bird,
     title: "Animales exóticos",
-    image: PHOTOS.rabbit,
+    image: PHOTOS.parakeet,
     text: "Microchip, cuidado dental, cirugía y hospitalización para reptiles, aves y pequeños mamíferos.",
   },
 ];
@@ -40,7 +40,7 @@ export default function Preventive() {
         eyebrow="Medicina general y preventiva"
         title="Nos anticipamos para cuidar mejor"
         intro="La prevención es la base de una vida larga y sana. Por eso la medicina preventiva está incluida en tu cuota de socio."
-        image={photo(PHOTOS.frenchie, 1800)}
+        image={photo(PHOTOS.whiteDog)}
       >
         <ButtonLink to="/pide-cita" size="lg">
           Pide cita
@@ -60,14 +60,14 @@ export default function Preventive() {
           </p>
           <IncludedList items={INCLUDED} />
         </div>
-        <img src={photo(PHOTOS.puppy, 1000)} alt="Cachorro de golden retriever corriendo" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
+        <img src={photo(PHOTOS.puppy)} alt="Cachorro de pastor alemán" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
       </section>
 
       <section className="bg-ink-50 py-20">
         <div className="container-page grid gap-6 md:grid-cols-3">
           {PROGRAMS.map(({ Icon, title, image, text }) => (
             <article key={title} className="overflow-hidden rounded-3xl bg-white shadow-card">
-              <img src={photo(image, 700)} alt="" className="aspect-[16/10] w-full object-cover" loading="lazy" />
+              <img src={photo(image)} alt="" className="aspect-[16/10] w-full object-cover" loading="lazy" />
               <div className="p-7">
                 <span className="-mt-14 mb-4 flex size-14 items-center justify-center rounded-2xl bg-brand-600 text-white shadow-lift">
                   <Icon className="size-7" aria-hidden />
