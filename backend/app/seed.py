@@ -294,7 +294,7 @@ FAQS = [
     ("Socios", "¿El precio depende de la edad, raza o tamaño de mi mascota?",
      "No. La cuota es la misma para cualquier mascota, independientemente de su especie, raza, edad o tamaño.", True),
     ("Socios", "¿Cuánto cuesta ser socio?",
-     "La cuota es de 29,99 € al mes, o 319,99 € al año con un mes gratis si eliges el pago anual.", True),
+     "La cuota es de 29,99 € al mes, o 319,99 € al año si eliges el pago anual, con lo que ahorras 39,89 €.", True),
     ("Socios", "¿Puedo dar de baja mi suscripción cuando quiera?",
      "Sí. No hay permanencia: puedes darte de baja en cualquier momento llamando a atención al cliente o escribiéndonos.", False),
     ("Citas", "¿Cómo pido cita?",

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { usePost, usePosts } from "../lib/api";
-import { formatDate, photo, PHOTOS } from "../lib/site";
+import { focus, formatDate, photo, PHOTOS } from "../lib/site";
 import { ErrorBox, Loading, PageHero } from "../components/ui";
 import { BlogCard, CtaBand, Newsletter } from "../components/sections";
 
@@ -84,7 +84,7 @@ export function BlogPostPage() {
     <>
       <article>
         <header className="relative bg-ink-900">
-          <img src={photo(data.image)} alt="" className="absolute inset-0 size-full object-cover opacity-35" />
+          <img src={photo(data.image)} style={focus(data.image)} alt="" className="absolute inset-0 size-full object-cover opacity-35" />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-950 to-ink-950/30" />
           <div className="container-page relative max-w-3xl py-20 sm:py-28">
             <Link to="/blog" className="inline-flex items-center gap-2 text-sm font-bold text-aqua-300 hover:text-white">

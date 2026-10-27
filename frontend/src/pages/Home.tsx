@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, BadgeCheck, MapPin, Navigation, PiggyBank, Stethoscope } from "lucide-react";
 import { useClinics, usePosts, useServices } from "../lib/api";
-import { LOGO, photo, PHOTOS, SITE } from "../lib/site";
+import { focus, LOGO, photo, PHOTOS, SITE } from "../lib/site";
 import { Icon } from "../components/Icon";
 import { ButtonLink, ErrorBox, Eyebrow, Loading, SectionHeading, Wave } from "../components/ui";
 import { BlogCard, FeaturedFaqs, Newsletter, Testimonials } from "../components/sections";
@@ -55,6 +55,7 @@ function HeroSlider() {
           key={s.image}
           src={photo(s.image)}
           alt=""
+          style={focus(s.image)}
           className={`absolute inset-0 size-full object-cover transition-opacity duration-1000 ${i === index ? "opacity-45" : "opacity-0"}`}
         />
       ))}
@@ -192,7 +193,7 @@ function WhyUs() {
     <section className="bg-ink-50 py-20">
       <div className="container-page grid items-center gap-14 lg:grid-cols-2">
         <div className="relative">
-          <img src={photo(PHOTOS.cat)} alt="Gata de pelo largo blanca y gris" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-lift sm:aspect-[4/3] lg:aspect-[4/5]" />
+          <img src={photo(PHOTOS.cat)} style={focus(PHOTOS.cat)} alt="Gata de pelo largo blanca y gris" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-lift sm:aspect-[4/3] lg:aspect-[4/5]" />
         </div>
         <div>
           <Eyebrow>Por qué elegirnos</Eyebrow>

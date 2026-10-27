@@ -1,5 +1,5 @@
 import { Bird, Cat, Dog } from "lucide-react";
-import { photo, PHOTOS } from "../lib/site";
+import { focus, photo, PHOTOS } from "../lib/site";
 import { ButtonLink, Eyebrow, PageHero } from "../components/ui";
 import { CtaBand, IncludedList } from "../components/sections";
 
@@ -60,14 +60,14 @@ export default function Preventive() {
           </p>
           <IncludedList items={INCLUDED} />
         </div>
-        <img src={photo(PHOTOS.puppy)} alt="Cachorro de pastor alemán" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
+        <img src={photo(PHOTOS.puppy)} style={focus(PHOTOS.puppy)} alt="Cachorro de pastor alemán" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
       </section>
 
       <section className="bg-ink-50 py-20">
         <div className="container-page grid gap-6 md:grid-cols-3">
           {PROGRAMS.map(({ Icon, title, image, text }) => (
             <article key={title} className="overflow-hidden rounded-3xl bg-white shadow-card">
-              <img src={photo(image)} alt="" className="aspect-[16/10] w-full object-cover" loading="lazy" />
+              <img src={photo(image)} style={focus(image)} alt="" className="aspect-[16/10] w-full object-cover" loading="lazy" />
               <div className="p-7">
                 <span className="-mt-14 mb-4 flex size-14 items-center justify-center rounded-2xl bg-brand-600 text-white shadow-lift">
                   <Icon className="size-7" aria-hidden />

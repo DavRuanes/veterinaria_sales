@@ -1,5 +1,5 @@
 import { Building, CircleCheck, HandHeart, Infinity as InfinityIcon, PiggyBank } from "lucide-react";
-import { photo, PHOTOS, SITE } from "../lib/site";
+import { photo, PHOTOS, SITE, YEARLY_SAVING } from "../lib/site";
 import { ButtonLink, Eyebrow, PageHero, SectionHeading } from "../components/ui";
 import { IncludedList } from "../components/sections";
 
@@ -56,7 +56,16 @@ export default function About() {
             recordatorios de vacunación y mucho más en nuestra clínica.
           </p>
         </div>
-        <img src={photo(PHOTOS.dogPlush)} alt="Perra tumbada con su peluche" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />
+        <video
+          src={photo("bulldog.mp4")}
+          poster={photo("bulldog.jpg")}
+          autoPlay
+          muted
+          loop
+          playsInline
+          aria-label="Bulldog blanco durmiendo"
+          className="mx-auto aspect-[4/5] w-full max-w-md rounded-[2rem] object-cover shadow-lift"
+        />
       </section>
 
       <section className="bg-ink-900 py-20">
@@ -88,12 +97,12 @@ export default function About() {
             </ButtonLink>
           </div>
           <div className="relative rounded-3xl bg-gradient-to-br from-brand-700 to-brand-900 p-8 text-white shadow-lift">
-            <span className="absolute -top-3 right-6 rounded-full bg-heart px-4 py-1 text-xs font-extrabold uppercase">1 mes gratis</span>
+            <span className="absolute -top-3 right-6 rounded-full bg-heart px-4 py-1 text-xs font-extrabold uppercase">Ahorras {YEARLY_SAVING} €</span>
             <h3 className="text-xl font-semibold text-white">Pago anual</h3>
             <p className="mt-4 font-display text-5xl font-bold">
               {SITE.priceYearly}€<span className="text-lg text-brand-200">/año</span>
             </p>
-            <p className="mt-2 text-brand-100">Ahorra un mes pagando el año completo.</p>
+            <p className="mt-2 text-brand-100">Pagando el año completo te ahorras {YEARLY_SAVING} € frente al pago mensual.</p>
             <ButtonLink to="/hazte-socio?plan=anual" variant="light" className="mt-8 w-full">
               Elegir anual
             </ButtonLink>

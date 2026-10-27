@@ -1,6 +1,7 @@
 import type { ComponentProps, ReactNode } from "react";
 import { Link } from "react-router-dom";
 import { AlertCircle, LoaderCircle, PawPrint } from "lucide-react";
+import { focus } from "../lib/site";
 
 type Variant = "primary" | "secondary" | "dark" | "outline" | "light";
 
@@ -94,7 +95,7 @@ export function PageHero({
 }) {
   return (
     <section className="relative overflow-hidden bg-ink-900">
-      {image && <img src={image} alt="" className="absolute inset-0 size-full object-cover opacity-30" />}
+      {image && <img src={image} alt="" style={focus(image)} className="absolute inset-0 size-full object-cover opacity-30" />}
       <div className="absolute inset-0 bg-gradient-to-r from-ink-950 via-ink-900/90 to-brand-900/60" />
       <div className="bg-paws absolute inset-0" />
       <div className="container-page relative py-16 sm:py-24">

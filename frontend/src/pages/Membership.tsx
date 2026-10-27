@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import { CircleCheck, Plus, ShieldCheck, Trash } from "lucide-react";
 import { post, useClinics, type Member, type MemberInput, type PetInput } from "../lib/api";
-import { SITE, SPECIES_LABEL } from "../lib/site";
+import { SITE, SPECIES_LABEL, YEARLY_SAVING } from "../lib/site";
 import { Button, ButtonLink, ErrorBox, Field, PageHero } from "../components/ui";
 import { IncludedList } from "../components/sections";
 
@@ -11,7 +11,7 @@ type Plan = MemberInput["plan"];
 
 const PLANS: { id: Plan; title: string; price: string; period: string; note: string }[] = [
   { id: "mensual", title: "Pago mensual", price: SITE.priceMonthly, period: "/mes", note: "Sin permanencia" },
-  { id: "anual", title: "Pago anual", price: SITE.priceYearly, period: "/año", note: "¡1 mes gratis!" },
+  { id: "anual", title: "Pago anual", price: SITE.priceYearly, period: "/año", note: `Ahorras ${YEARLY_SAVING} €` },
 ];
 
 const emptyPet = (): PetInput => ({ name: "", species: "perro", breed: "", birth_date: null });

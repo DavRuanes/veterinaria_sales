@@ -16,6 +16,10 @@ export const SITE = {
   maps: "https://www.google.com/maps/place/Tectum+Ca%C3%B1averal+I/@40.4076025,-3.5647398,17z/data=!3m1!4b1!4m6!3m5!1s0xd423b0018bb7c01:0x355231691a55ba34!8m2!3d40.4075984!4d-3.5621595!16s%2Fg%2F11zfsk6zn7",
 };
 
+/** Lo que se ahorra con el pago anual frente a 12 mensualidades, p. ej. "39,89". */
+const euros = (price: string) => Number(price.replace(",", "."));
+export const YEARLY_SAVING = (euros(SITE.priceMonthly) * 12 - euros(SITE.priceYearly)).toFixed(2).replace(".", ",");
+
 export const SPECIES_LABEL: Record<string, string> = {
   perro: "Perro",
   gato: "Gato",
@@ -25,6 +29,19 @@ export const SPECIES_LABEL: Record<string, string> = {
 /** Fotos propias en frontend/public/fotos, respetando la base de despliegue. */
 export function photo(file: string) {
   return `${import.meta.env.BASE_URL}fotos/${file}`;
+}
+
+/** Punto de cada foto que debe verse siempre cuando se recorta (object-position). */
+const FOCUS: Record<string, string> = {
+  "cachorro.jpg": "50% 12%",
+  "perra-peluche.jpg": "50% 45%",
+  "perro-peluqueria.jpg": "50% 20%",
+  "cotorra.jpg": "60% 12%",
+  "perro-blanco.jpg": "50% 38%",
+};
+
+export function focus(src: string) {
+  return { objectPosition: FOCUS[src.split("/").pop() ?? ""] ?? "50% 50%" };
 }
 
 export const PHOTOS = {
