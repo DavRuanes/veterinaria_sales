@@ -1,12 +1,12 @@
 export const SITE = {
   name: "Veterinarias Sales",
-  priceMonthly: "22,90",
-  priceYearly: "274,80",
-  phone: "910 000 010",
+  priceMonthly: "29,99",
+  priceYearly: "319,99",
+  phone: "605543907",
   phoneHours: "Martes a sábado de 9:00 a 18:00",
-  emergencyPhone: "910 000 024",
-  whatsapp: "34600000000",
-  email: "hola@veterinariassales.es",
+  emergencyPhone: "605543907",
+  whatsapp: "34605543907",
+  email: "sales.vet@gmail.com",
   social: {
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/",
