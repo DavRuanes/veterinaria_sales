@@ -18,7 +18,7 @@ SERVICES = [
         "title": "Consultas",
         "icon": "stethoscope",
         "summary": "Consultas personalizadas con los mejores profesionales y equipamiento de última tecnología.",
-        "description": "En nuestras clínicas ofrecemos consultas personalizadas con los mejores profesionales "
+        "description": "En nuestra clínica ofrecemos consultas personalizadas con los mejores profesionales "
         "especialistas y equipamiento de última tecnología, para dar a tu mascota una asistencia integral de calidad.",
         "bullets": ["Consultas ilimitadas para socios", "Revisiones completas", "Seguimiento personalizado"],
     },
@@ -200,16 +200,7 @@ ALL_SERVICES = ["consultas", "tienda", "pruebas-laboratoriales", "vacunaciones",
 
 CLINICS = [
     # slug, nombre, región, ciudad, dirección, CP, lat, lng, 24h, servicios extra
-    ("sevilla-nervion", "Veterinarias Sales Sevilla Nervión", "Andalucía", "Sevilla", "Av. Luis de Morales, 18", "41018", 37.3833, -5.9733, True, ["cirugias", "urgencias-24h", "tac"]),
-    ("malaga-teatinos", "Veterinarias Sales Málaga Teatinos", "Andalucía", "Málaga", "C/ Pacífico, 42", "29004", 36.7046, -4.4473, False, ["cirugias"]),
-    ("barcelona-sant-andreu", "Veterinarias Sales Barcelona Sant Andreu", "Cataluña", "Barcelona", "C/ Gran de Sant Andreu, 210", "08030", 41.4352, 2.1897, True, ["cirugias", "urgencias-24h", "endoscopia"]),
-    ("badalona-centre", "Veterinarias Sales Badalona", "Cataluña", "Badalona", "C/ del Mar, 75", "08911", 41.4469, 2.2451, False, []),
-    ("madrid-vallecas", "Veterinarias Sales Madrid Vallecas", "Madrid", "Madrid", "Av. de la Albufera, 153", "28038", 40.3920, -3.6620, True, ["cirugias", "urgencias-24h", "tac", "endoscopia"]),
-    ("madrid-chamberi", "Veterinarias Sales Madrid Chamberí", "Madrid", "Madrid", "C/ de Fuencarral, 140", "28010", 40.4310, -3.7020, False, ["cirugias"]),
-    ("alcobendas", "Veterinarias Sales Alcobendas", "Madrid", "Alcobendas", "Av. de España, 21", "28100", 40.5370, -3.6370, False, []),
-    ("murcia-centro", "Veterinarias Sales Murcia", "Murcia", "Murcia", "Av. Miguel de Cervantes, 40", "30009", 37.9960, -1.1350, False, ["cirugias"]),
-    ("valencia-campanar", "Veterinarias Sales Valencia Campanar", "Comunidad Valenciana", "Valencia", "Av. de Pío XII, 52", "46015", 39.4810, -0.3920, True, ["cirugias", "urgencias-24h"]),
-    ("alicante-centro", "Veterinarias Sales Alicante", "Comunidad Valenciana", "Alicante", "Av. de Maisonnave, 33", "03003", 38.3420, -0.4950, False, []),
+    ("madrid-canaveral", "Veterinarias Sales Cañaveral", "Madrid", "Madrid", "Tectum Cañaveral I, Cañaveral", "28052", 40.4075984, -3.5621595, False, ["cirugias"]),
 ]
 
 POSTS = [
@@ -319,7 +310,7 @@ FAQS = [
     ("Servicios", "¿Atendéis animales exóticos?",
      "Sí, contamos con veterinarios especializados en reptiles, aves y pequeños mamíferos.", False),
     ("Servicios", "¿Qué hago si tengo una urgencia fuera de horario?",
-     "Llama a nuestro teléfono de urgencias 24h. Te atenderemos y, si es necesario, te derivaremos a la clínica 24h más cercana.", False),
+     "Llama a nuestro teléfono de urgencias 24h. Te atenderemos y, si es necesario, te indicaremos cómo actuar y adónde acudir.", False),
 ]
 
 
@@ -341,11 +332,11 @@ def seed(db: Session) -> None:
         )
 
     if _empty(db, models.Clinic):
-        for i, (slug, name, region, city, address, cp, lat, lng, h24, extra) in enumerate(CLINICS):
+        for slug, name, region, city, address, cp, lat, lng, h24, extra in CLINICS:
             db.add(
                 models.Clinic(
                     slug=slug, name=name, region=region, city=city, address=address, postal_code=cp,
-                    phone=f"910 000 {100 + i:03d}", lat=lat, lng=lng, open_24h=h24,
+                    phone="605543907", lat=lat, lng=lng, open_24h=h24,
                     hours_vet="24 horas, todos los días" if h24 else "Martes a sábado de 10:00 a 21:00",
                     hours_shop="Lunes a sábado de 10:00 a 21:00",
                     hours_grooming="Martes a sábado de 10:00 a 20:00",

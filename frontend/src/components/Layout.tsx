@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
 import { CalendarCheck, ChevronDown, Menu, Phone, Siren, X } from "lucide-react";
-import { LOGO, REGIONS, SITE } from "../lib/site";
+import { LOGO, SITE } from "../lib/site";
 import { ButtonLink } from "./ui";
 import {
   FacebookIcon,
@@ -20,15 +20,11 @@ const NAV: NavItem[] = [
     to: "/servicios-de-las-clinicas",
     children: [
       { label: "Especialidades", to: "/especialidades" },
-      { label: "Servicios de las clínicas", to: "/servicios-de-las-clinicas" },
+      { label: "Servicios de la clínica", to: "/servicios-de-las-clinicas" },
       { label: "Medicina general y preventiva", to: "/medicina-general-y-preventiva" },
     ],
   },
-  {
-    label: "Tus clínicas",
-    to: "/tus-clinicas",
-    children: REGIONS.map((r) => ({ label: r, to: `/tus-clinicas?region=${encodeURIComponent(r)}` })),
-  },
+  { label: "Nuestra clínica", to: "/tus-clinicas" },
   { label: "Blog", to: "/blog" },
   { label: "Contacto", to: "/contacto" },
 ];
@@ -276,9 +272,9 @@ const FOOTER_COLUMNS = [
     title: "Veterinarias Sales",
     links: [
       ["¿Qué es Veterinarias Sales?", "/que-es-veterinarias-sales"],
-      ["Servicios de las clínicas", "/servicios-de-las-clinicas"],
+      ["Servicios de la clínica", "/servicios-de-las-clinicas"],
       ["Especialidades", "/especialidades"],
-      ["Tus clínicas", "/tus-clinicas"],
+      ["Nuestra clínica", "/tus-clinicas"],
       ["Trabaja con nosotros", "/contacto?asunto=empleo"],
     ],
   },

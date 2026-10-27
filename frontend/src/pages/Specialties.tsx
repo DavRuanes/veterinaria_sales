@@ -12,7 +12,7 @@ export default function Specialties() {
       <PageHero
         eyebrow="Especialidades"
         title="Un equipo experto para cada necesidad"
-        intro="Más de 150 veterinarios especializados trabajan en nuestras clínicas para ofrecer a tu mascota el mejor diagnóstico y tratamiento."
+        intro="Nuestro equipo de veterinarios especializados trabaja en nuestra clínica para ofrecer a tu mascota el mejor diagnóstico y tratamiento."
         image={photo(PHOTOS.vetCat, 1800)}
       >
         <ButtonLink to="/pide-cita" size="lg">

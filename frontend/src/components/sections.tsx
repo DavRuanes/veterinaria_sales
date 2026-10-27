@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import { useRef, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
 import { useMutation } from "@tanstack/react-query";
 import {
@@ -35,78 +35,10 @@ export function CtaBand({
               Hazte socio
             </ButtonLink>
             <ButtonLink to="/tus-clinicas" variant="dark" size="lg">
-              Localiza tu clínica más cercana
+              Dónde estamos
             </ButtonLink>
           </div>
         </div>
-      </div>
-    </section>
-  );
-}
-
-/* ---------- Contadores ---------- */
-
-function useCountUp(target: number, start: boolean, duration = 1600) {
-  const [value, setValue] = useState(0);
-  useEffect(() => {
-    if (!start) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setValue(target);
-      return;
-    }
-    let frame: number;
-    const t0 = performance.now();
-    const tick = (t: number) => {
-      const p = Math.min(1, (t - t0) / duration);
-      setValue(Math.round(target * (1 - Math.pow(1 - p, 3))));
-      if (p < 1) frame = requestAnimationFrame(tick);
-    };
-    frame = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(frame);
-  }, [target, start, duration]);
-  return value;
-}
-
-function Counter({ value, suffix, label, start }: { value: number; suffix?: string; label: string; start: boolean }) {
-  const current = useCountUp(value, start);
-  return (
-    <div className="text-center">
-      <p className="font-display text-4xl font-bold text-white sm:text-5xl">
-        {current.toLocaleString("es-ES")}
-        {suffix}
-      </p>
-      <p className="mt-2 text-sm font-semibold text-brand-200">{label}</p>
-    </div>
-  );
-}
-
-export function Stats() {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(([entry]) => entry.isIntersecting && setVisible(true), { threshold: 0.3 });
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  const stats = [
-    { value: 10, label: "Clínicas en toda España" },
-    { value: 85000, suffix: "+", label: "Mascotas socias" },
-    { value: 12, label: "Años cuidando mascotas" },
-    { value: 40, suffix: "+", label: "Cirugías diarias" },
-    { value: 150, suffix: "+", label: "Veterinarios especialistas" },
-  ];
-
-  return (
-    <section className="relative overflow-hidden bg-ink-900 py-16">
-      <div className="bg-paws absolute inset-0" />
-      <div ref={ref} className="container-page relative grid grid-cols-2 gap-10 md:grid-cols-5">
-        {stats.map((s) => (
-          <Counter key={s.label} {...s} start={visible} />
-        ))}
       </div>
     </section>
   );

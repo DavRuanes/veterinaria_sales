@@ -6,7 +6,7 @@ const PAGES: Record<string, { title: string; body: string[] }> = {
   condiciones: {
     title: "Condiciones del servicio",
     body: [
-      `La cuota de socio de ${SITE.name} da acceso a los servicios incluidos en cualquiera de las clínicas de la red, sin periodo de carencia ni copagos.`,
+      `La cuota de socio de ${SITE.name} da acceso a los servicios incluidos en nuestra clínica, sin periodo de carencia ni copagos.`,
       "La suscripción no tiene permanencia y puede cancelarse en cualquier momento. La baja será efectiva al final del periodo ya abonado.",
       "Los servicios no incluidos en la cuota (especialidades, cirugías, pruebas avanzadas, etc.) se facturan con precios exclusivos para socios.",
     ],
@@ -23,7 +23,7 @@ const PAGES: Record<string, { title: string; body: string[] }> = {
     title: "Política de cookies",
     body: [
       "Este sitio utiliza únicamente cookies técnicas necesarias para su funcionamiento.",
-      "El mapa de clínicas carga teselas de OpenStreetMap, que puede registrar tu dirección IP conforme a su propia política de privacidad.",
+      "El mapa de la clínica carga teselas de OpenStreetMap, que puede registrar tu dirección IP conforme a su propia política de privacidad.",
     ],
   },
   "aviso-legal": {

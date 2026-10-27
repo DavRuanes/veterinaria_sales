@@ -21,7 +21,7 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="Tus servicios incluidos"
-        title="Servicios de las clínicas"
+        title="Servicios de la clínica"
         intro={`Todo lo que tu mascota necesita, en un solo lugar y por solo una cuota de ${SITE.priceMonthly} € al mes.`}
         image={photo(PHOTOS.puppy, 1800)}
       >
@@ -29,7 +29,7 @@ export default function Services() {
           Hazte socio hoy mismo
         </ButtonLink>
         <ButtonLink to="/tus-clinicas" variant="light" size="lg">
-          Localiza tu clínica
+          Dónde estamos
         </ButtonLink>
       </PageHero>
 

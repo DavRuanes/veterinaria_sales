@@ -21,7 +21,7 @@ function FitTo({ clinics, selected }: { clinics: Clinic[]; selected: Clinic | nu
     if (selected) {
       map.flyTo([selected.lat, selected.lng], 14, { duration: 0.8 });
     } else if (clinics.length) {
-      map.fitBounds(L.latLngBounds(clinics.map((c) => [c.lat, c.lng])), { padding: [40, 40], maxZoom: 13 });
+      map.fitBounds(L.latLngBounds(clinics.map((c) => [c.lat, c.lng])), { padding: [40, 40], maxZoom: 16 });
     }
   }, [map, clinics, selected]);
   return null;

@@ -18,7 +18,7 @@ const INCLUDED = [
 const PILLARS = [
   { Icon: PiggyBank, title: "Cuota mensual única", text: "Un precio fijo para cualquier mascota, sea cual sea su raza, edad o tamaño." },
   { Icon: InfinityIcon, title: "Todo incluido", text: "Sin carencias, sin copagos y sin límites de uso desde el primer día." },
-  { Icon: Building, title: "Red de clínicas propias", text: "Clínicas en toda España con el mismo nivel de calidad y equipamiento." },
+  { Icon: Building, title: "Clínica propia", text: "Nuestra clínica de Cañaveral (Madrid), con equipamiento moderno y un equipo cercano." },
   { Icon: HandHeart, title: "Trato humano y vocación", text: "Profesionales que aman a los animales tanto como tú." },
 ];
 
@@ -53,7 +53,7 @@ export default function About() {
           </p>
           <p className="mt-4 text-lg leading-relaxed text-ink-600">
             Con una sola cuota tienes acceso a consultas ilimitadas, seguimiento veterinario, desparasitaciones,
-            recordatorios de vacunación y mucho más en cualquiera de nuestras clínicas.
+            recordatorios de vacunación y mucho más en nuestra clínica.
           </p>
         </div>
         <img src={photo(PHOTOS.catDog, 1000)} alt="Un perro y un gato descansando juntos" className="aspect-[4/3] w-full rounded-[2rem] object-cover shadow-lift" />

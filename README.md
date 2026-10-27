@@ -1,6 +1,6 @@
 # Veterinarias Sales
 
-Web para una red de clínicas veterinarias que funciona con una cuota mensual de socio: pagas una cantidad fija y tienes consultas, vacunas, desparasitaciones y otros servicios básicos incluidos, sin copagos ni periodos de carencia.
+Web para una clínica veterinaria que funciona con una cuota mensual de socio: pagas una cantidad fija y tienes consultas, vacunas, desparasitaciones y otros servicios básicos incluidos, sin copagos ni periodos de carencia.
 
 **Demo:** https://davruanes.github.io/veterinaria_sales/
 
@@ -13,7 +13,7 @@ La idea surgió de analizar cómo funcionan las cadenas de clínicas veterinaria
 ## Qué se puede hacer en la web
 
 - **Consultar la información**: qué incluye la cuota, los 16 servicios de las clínicas, las 11 especialidades, la medicina preventiva por tipo de animal, el blog y las preguntas frecuentes.
-- **Buscar una clínica**: por ciudad, código postal o provincia, filtrando por comunidad autónoma o pidiendo las más cercanas a tu ubicación. Todas aparecen en un mapa.
+- **Ver la clínica**: dirección, horarios y servicios de la clínica de Cañaveral (Madrid), con su mapa y un enlace a Google Maps.
 - **Pedir cita**: eliges clínica, servicio, día y hora entre los huecos que quedan libres, y rellenas los datos de la mascota.
 - **Hacerse socio**: eliges plan mensual o anual, rellenas los datos del titular y añades una o varias mascotas.
 - **Contactar** o **suscribirse a la newsletter**.
@@ -88,11 +88,11 @@ Servicios, especialidades, clínicas, artículos del blog, opiniones y preguntas
 
 Podría haber puesto todo ese texto directamente en el frontend, pero tenerlo en la base de datos tiene sentido: el día de mañana se podría editar desde un panel sin tocar código ni volver a desplegar la web.
 
-### Buscador de clínicas
+### La clínica
 
-El texto que escribes se envía a la API, que busca coincidencias en el nombre, la ciudad, la dirección y la comunidad. Para el código postal busca los que *empiezan* por lo que escribes, de modo que `280` devuelve todas las clínicas de Madrid capital. El filtro por comunidad se guarda en la URL (`/tus-clinicas?region=Madrid`), así el menú de la cabecera puede enlazar directamente a cada comunidad.
+La web tiene una sola clínica, en Cañaveral (Madrid). Sus datos (dirección, teléfono, horarios y servicios) están en la lista `CLINICS` de [backend/app/seed.py](backend/app/seed.py), y la página `/tus-clinicas` la muestra con su mapa y un botón **"Cómo llegar"** que abre Google Maps (el enlace está en `SITE.maps` de [frontend/src/lib/site.ts](frontend/src/lib/site.ts)).
 
-El botón **"Cerca de mí"** pide la ubicación al navegador y calcula en el propio navegador la distancia a cada clínica con la fórmula de Haversine (distancia sobre una esfera, que para estas distancias es suficientemente precisa). Lo hago en el cliente porque solo hay unas pocas clínicas y así la ubicación del usuario nunca sale de su navegador.
+La API sigue aceptando varias clínicas y sus filtros (`?region=` y `?q=`), así que añadir otra clínica es solo añadir una línea a `CLINICS`.
 
 ### Sistema de citas
 

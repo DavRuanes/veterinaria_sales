@@ -1,11 +1,11 @@
-import { useEffect, useState, type FormEvent } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import { ArrowRight, BadgeCheck, HeartHandshake, MapPin, PiggyBank, Search, Stethoscope } from "lucide-react";
-import { usePosts, useServices } from "../lib/api";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowRight, BadgeCheck, MapPin, Navigation, PiggyBank, Stethoscope } from "lucide-react";
+import { useClinics, usePosts, useServices } from "../lib/api";
 import { LOGO, photo, PHOTOS, SITE } from "../lib/site";
 import { Icon } from "../components/Icon";
 import { ButtonLink, ErrorBox, Eyebrow, Loading, SectionHeading, Wave } from "../components/ui";
-import { BlogCard, FeaturedFaqs, Newsletter, Stats, Testimonials } from "../components/sections";
+import { BlogCard, FeaturedFaqs, Newsletter, Testimonials } from "../components/sections";
 
 const SLIDES = [
   {
@@ -20,7 +20,7 @@ const SLIDES = [
   },
   {
     image: PHOTOS.vetCat,
-    eyebrow: "Más de 150 veterinarios",
+    eyebrow: "Especialistas",
     title: (
       <>
         Un equipo experto <span className="text-aqua-300">para cada necesidad</span>
@@ -117,7 +117,7 @@ function ValueProps() {
     {
       Icon: BadgeCheck,
       title: "Ventajas exclusivas",
-      text: "Especialistas, descuentos en tienda y peluquería y una red de clínicas en toda España.",
+      text: "Especialistas, descuentos en tienda y peluquería y atención cercana en nuestra clínica de Cañaveral.",
     },
   ];
   return (
@@ -177,7 +177,7 @@ function WhyUs() {
   const blocks = [
     {
       title: "Cercanía que se nota",
-      text: "Clínicas propias, un equipo cercano que conoce a tu mascota por su nombre y tecnología moderna en cada consulta.",
+      text: "Clínica propia, un equipo cercano que conoce a tu mascota por su nombre y tecnología moderna en cada consulta.",
     },
     {
       title: "Sin sorpresas",
@@ -193,13 +193,6 @@ function WhyUs() {
       <div className="container-page grid items-center gap-14 lg:grid-cols-2">
         <div className="relative">
           <img src={photo(PHOTOS.vetCat, 1000)} alt="Veterinaria atendiendo a un gato en consulta" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-lift sm:aspect-[4/3] lg:aspect-[4/5]" />
-          <div className="absolute -right-4 -bottom-6 flex items-center gap-3 rounded-2xl bg-ink-900 px-6 py-4 text-white shadow-lift sm:right-8">
-            <HeartHandshake className="size-9 text-aqua-300" aria-hidden />
-            <p className="leading-tight">
-              <strong className="block font-display text-2xl">+85.000</strong>
-              <span className="text-sm text-ink-300">familias confían en nosotros</span>
-            </p>
-          </div>
         </div>
         <div>
           <Eyebrow>Por qué elegirnos</Eyebrow>
@@ -226,14 +219,8 @@ function WhyUs() {
   );
 }
 
-function ClinicFinder() {
-  const navigate = useNavigate();
-  const [q, setQ] = useState("");
-
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    navigate(`/tus-clinicas${q.trim() ? `?q=${encodeURIComponent(q.trim())}` : ""}`);
-  };
+function ClinicLocation() {
+  const clinic = useClinics().data?.[0];
 
   return (
     <section className="py-20">
@@ -242,25 +229,32 @@ function ClinicFinder() {
           <div className="bg-paws absolute inset-0" />
           <div className="relative grid items-center gap-10 lg:grid-cols-2">
             <div>
-              <Eyebrow light>Tus clínicas</Eyebrow>
-              <h2 className="text-3xl font-bold text-white sm:text-4xl">Encuentra tu clínica más cercana</h2>
-              <p className="mt-4 text-lg text-brand-100">Busca por ciudad, código postal o provincia y consulta dirección, horarios y servicios.</p>
+              <Eyebrow light>Nuestra clínica</Eyebrow>
+              <h2 className="text-3xl font-bold text-white sm:text-4xl">Te esperamos en Cañaveral</h2>
+              <p className="mt-4 text-lg text-brand-100">Consulta la dirección, los horarios y los servicios de la clínica.</p>
             </div>
-            <form onSubmit={submit} className="flex flex-col gap-3 rounded-3xl bg-white p-3 shadow-lift sm:flex-row">
-              <label className="flex flex-1 items-center gap-3 px-3">
-                <MapPin className="size-5 text-brand-600" aria-hidden />
-                <span className="sr-only">Ciudad, código postal o provincia</span>
-                <input
-                  value={q}
-                  onChange={(e) => setQ(e.target.value)}
-                  placeholder="Ciudad, código postal o provincia"
-                  className="w-full py-3 text-ink-900 placeholder:text-ink-500 focus:outline-none"
-                />
-              </label>
-              <button type="submit" className="flex items-center justify-center gap-2 rounded-2xl bg-ink-900 px-6 py-3 font-extrabold text-white uppercase hover:bg-ink-800">
-                <Search className="size-5" aria-hidden /> Buscar
-              </button>
-            </form>
+            <div className="rounded-3xl bg-white p-6 shadow-lift">
+              <p className="flex items-start gap-3 text-ink-800">
+                <MapPin className="mt-0.5 size-5 shrink-0 text-brand-600" aria-hidden />
+                <span>
+                  <strong className="block">{clinic?.name ?? SITE.name}</strong>
+                  {clinic && `${clinic.address}, ${clinic.postal_code} ${clinic.city}`}
+                </span>
+              </p>
+              <div className="mt-5 flex flex-wrap gap-3">
+                <ButtonLink to="/tus-clinicas" variant="dark" size="sm">
+                  Ver la clínica
+                </ButtonLink>
+                <a
+                  href={SITE.maps}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1.5 rounded-full border-2 border-ink-200 px-4 py-2 text-xs font-extrabold text-ink-800 uppercase hover:border-ink-800"
+                >
+                  <Navigation className="size-4" aria-hidden /> Cómo llegar
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -296,9 +290,8 @@ export default function Home() {
       <HeroSlider />
       <ValueProps />
       <ServicesGrid />
-      <Stats />
       <WhyUs />
-      <ClinicFinder />
+      <ClinicLocation />
       <Testimonials />
       <LatestPosts />
       <FeaturedFaqs />
