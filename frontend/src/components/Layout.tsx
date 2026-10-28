@@ -4,9 +4,7 @@ import { CalendarCheck, ChevronDown, Menu, Phone, Siren, X } from "lucide-react"
 import { LOGO, SITE } from "../lib/site";
 import { ButtonLink } from "./ui";
 import {
-  FacebookIcon,
   InstagramIcon,
-  LinkedinIcon,
   TiktokIcon,
   WhatsappIcon,
 } from "./Icon";
@@ -286,9 +284,7 @@ const FOOTER_COLUMNS = [
 function Footer() {
   const socials = [
     { href: SITE.social.instagram, label: "Instagram", Icon: InstagramIcon },
-    { href: SITE.social.facebook, label: "Facebook", Icon: FacebookIcon },
     { href: SITE.social.tiktok, label: "TikTok", Icon: TiktokIcon },
-    { href: SITE.social.linkedin, label: "LinkedIn", Icon: LinkedinIcon },
   ];
 
   return (

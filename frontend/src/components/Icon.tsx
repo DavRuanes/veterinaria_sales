@@ -72,26 +72,10 @@ export function InstagramIcon({ className }: SvgProps) {
   );
 }
 
-export function FacebookIcon({ className }: SvgProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M14 8.5V6.8c0-.8.5-1.3 1.4-1.3H17V2.2C16.4 2.1 15.3 2 14.3 2 11.8 2 10 3.6 10 6.4v2.1H7.3v3.7H10V22h4v-9.8h2.8l.5-3.7H14z" />
-    </svg>
-  );
-}
-
 export function TiktokIcon({ className }: SvgProps) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
       <path d="M16.6 2h-3.3v13.4a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .8.1V9.2a6.3 6.3 0 1 0 5.4 6.2V8.6a7.7 7.7 0 0 0 4.4 1.4V6.7a4.4 4.4 0 0 1-4.4-4.4z" />
-    </svg>
-  );
-}
-
-export function LinkedinIcon({ className }: SvgProps) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden>
-      <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z" />
     </svg>
   );
 }
