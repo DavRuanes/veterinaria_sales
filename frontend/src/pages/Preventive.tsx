@@ -16,7 +16,7 @@ const PROGRAMS = [
   {
     Icon: Dog,
     title: "Medicina canina",
-    image: PHOTOS.dogGrooming,
+    image: PHOTOS.dogBlanket,
     text: "Planes preventivos adaptados a la raza, el tamaño y el estilo de vida de tu perro, desde cachorro hasta senior.",
   },
   {

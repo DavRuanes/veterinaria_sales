@@ -269,7 +269,7 @@ POSTS = [
         "slug": "salud-dental-mascotas",
         "title": "Salud dental: la gran olvidada en perros y gatos",
         "category": "Prevención",
-        "image": "perro-peluqueria.jpg",
+        "image": "perro-manta.jpg",
         "excerpt": "El 80% de los perros mayores de 3 años tiene algún problema bucodental. Te explicamos cómo prevenirlo.",
         "content": "El sarro y la enfermedad periodontal pueden afectar a corazón, riñones e hígado.\n\n"
         "## Cepillado\nLo ideal es cepillar los dientes de tu mascota a diario con pasta específica.\n\n"
@@ -280,12 +280,12 @@ POSTS = [
 ]
 
 TESTIMONIALS = [
-    ("Katherine M.", "Luna, golden retriever", "Excelente atención. Me explicaron todo con mucha paciencia y Luna salió feliz de la consulta.", dt.date(2025, 12, 12)),
-    ("Andrea R.", "Simba, gato europeo", "Muy buena experiencia. Fui hace una semana con mi gatete y todo genial, el trato fue muy cercano.", dt.date(2025, 12, 3)),
-    ("Javier P.", "Toby, beagle", "Lo mejor es no tener que preocuparte por las facturas. Pagas la cuota y vas siempre que lo necesitas.", dt.date(2025, 11, 20)),
-    ("Lucía G.", "Nala, ragdoll", "Tuvimos una urgencia un domingo por la noche y nos atendieron enseguida. Eternamente agradecidos.", dt.date(2025, 11, 2)),
-    ("Marcos T.", "Rocky y Kira", "Tengo dos perros y la cuota es la misma. Las instalaciones están impecables y el equipo es encantador.", dt.date(2025, 10, 18)),
-    ("Elena S.", "Coco, conejo", "Por fin una clínica que sabe de exóticos. Coco está estupendo gracias al equipo.", dt.date(2025, 9, 30)),
+    ("Katherine M.", "Luna, golden retriever", "Excelente atención. Me explicaron todo con mucha paciencia y Luna salió feliz de la consulta.", dt.date(2027, 1, 22)),
+    ("Andrea R.", "Simba, gato europeo", "Muy buena experiencia. Fui hace una semana con mi gatete y todo genial, el trato fue muy cercano.", dt.date(2027, 1, 14)),
+    ("Javier P.", "Toby, beagle", "Lo mejor es no tener que preocuparte por las facturas. Pagas la cuota y vas siempre que lo necesitas.", dt.date(2027, 1, 5)),
+    ("Lucía G.", "Nala, ragdoll", "Tuvimos una urgencia un domingo por la noche y nos atendieron enseguida. Eternamente agradecidos.", dt.date(2026, 12, 20)),
+    ("Marcos T.", "Rocky y Kira", "Tengo dos perros y la cuota es la misma. Las instalaciones están impecables y el equipo es encantador.", dt.date(2026, 12, 11)),
+    ("Elena S.", "Coco, conejo", "Por fin una clínica que sabe de exóticos. Coco está estupendo gracias al equipo.", dt.date(2026, 12, 2)),
 ]
 
 FAQS = [

@@ -6,7 +6,7 @@ export const SITE = {
   phoneHours: "Martes a sábado de 9:00 a 18:00",
   emergencyPhone: "605543907",
   whatsapp: "34605543907",
-  email: "sales.vet@gmail.com",
+  email: "sales.veterinarias@gmail.com",
   social: {
     instagram: "https://instagram.com/",
     facebook: "https://facebook.com/",
@@ -35,7 +35,7 @@ export function photo(file: string) {
 const FOCUS: Record<string, string> = {
   "cachorro.jpg": "50% 12%",
   "perra-peluche.jpg": "50% 45%",
-  "perro-peluqueria.jpg": "50% 20%",
+  "perro-manta.jpg": "50% 30%",
   "cotorra.jpg": "60% 12%",
   "perro-blanco.jpg": "50% 38%",
 };
@@ -47,7 +47,7 @@ export function focus(src: string) {
 export const PHOTOS = {
   puppy: "cachorro.jpg",
   dogPlush: "perra-peluche.jpg",
-  dogGrooming: "perro-peluqueria.jpg",
+  dogBlanket: "perro-manta.jpg",
   macaw: "guacamayo.jpg",
   cat: "gata.jpg",
   parakeet: "cotorra.jpg",

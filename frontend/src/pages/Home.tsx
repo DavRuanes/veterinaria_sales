@@ -19,7 +19,7 @@ const SLIDES = [
     text: `Consultas ilimitadas, vacunas, desparasitaciones y mucho más por solo ${SITE.priceMonthly} € al mes.`,
   },
   {
-    image: PHOTOS.dogGrooming,
+    image: PHOTOS.dogBlanket,
     eyebrow: "Especialistas",
     title: (
       <>

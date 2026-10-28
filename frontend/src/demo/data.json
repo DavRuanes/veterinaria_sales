@@ -454,7 +454,7 @@
    "title": "Salud dental: la gran olvidada en perros y gatos",
    "category": "Prevención",
    "excerpt": "El 80% de los perros mayores de 3 años tiene algún problema bucodental. Te explicamos cómo prevenirlo.",
-   "image": "perro-peluqueria.jpg",
+   "image": "perro-manta.jpg",
    "published_at": "2025-11-05",
    "content": "El sarro y la enfermedad periodontal pueden afectar a corazón, riñones e hígado.\n\n## Cepillado\nLo ideal es cepillar los dientes de tu mascota a diario con pasta específica.\n\n## Snacks dentales\nAyudan, pero no sustituyen al cepillado.\n\n## Limpieza profesional\nUna limpieza ultrasónica periódica mantiene su boca sana."
   }
@@ -466,7 +466,7 @@
    "pet": "Luna, golden retriever",
    "text": "Excelente atención. Me explicaron todo con mucha paciencia y Luna salió feliz de la consulta.",
    "rating": 5,
-   "published_at": "2025-12-12"
+   "published_at": "2027-01-22"
   },
   {
    "id": 2,
@@ -474,7 +474,7 @@
    "pet": "Simba, gato europeo",
    "text": "Muy buena experiencia. Fui hace una semana con mi gatete y todo genial, el trato fue muy cercano.",
    "rating": 5,
-   "published_at": "2025-12-03"
+   "published_at": "2027-01-14"
   },
   {
    "id": 3,
@@ -482,7 +482,7 @@
    "pet": "Toby, beagle",
    "text": "Lo mejor es no tener que preocuparte por las facturas. Pagas la cuota y vas siempre que lo necesitas.",
    "rating": 5,
-   "published_at": "2025-11-20"
+   "published_at": "2027-01-05"
   },
   {
    "id": 4,
@@ -490,7 +490,7 @@
    "pet": "Nala, ragdoll",
    "text": "Tuvimos una urgencia un domingo por la noche y nos atendieron enseguida. Eternamente agradecidos.",
    "rating": 5,
-   "published_at": "2025-11-02"
+   "published_at": "2026-12-20"
   },
   {
    "id": 5,
@@ -498,7 +498,7 @@
    "pet": "Rocky y Kira",
    "text": "Tengo dos perros y la cuota es la misma. Las instalaciones están impecables y el equipo es encantador.",
    "rating": 5,
-   "published_at": "2025-10-18"
+   "published_at": "2026-12-11"
   },
   {
    "id": 6,
@@ -506,7 +506,7 @@
    "pet": "Coco, conejo",
    "text": "Por fin una clínica que sabe de exóticos. Coco está estupendo gracias al equipo.",
    "rating": 5,
-   "published_at": "2025-09-30"
+   "published_at": "2026-12-02"
   }
  ],
  "faqs": [
