@@ -8,8 +8,8 @@ export const SITE = {
   whatsapp: "34605543907",
   email: "sales.veterinarias@gmail.com",
   social: {
-    instagram: "https://instagram.com/",
-    tiktok: "https://tiktok.com/",
+    instagram: "https://www.instagram.com/sales.veterinarias/",
+    tiktok: "https://www.tiktok.com/@sales.veterinaria",
   },
   maps: "https://www.google.com/maps/place/Tectum+Ca%C3%B1averal+I/@40.4076025,-3.5647398,17z/data=!3m1!4b1!4m6!3m5!1s0xd423b0018bb7c01:0x355231691a55ba34!8m2!3d40.4075984!4d-3.5621595!16s%2Fg%2F11zfsk6zn7",
 };
